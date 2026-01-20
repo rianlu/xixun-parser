@@ -1,0 +1,7372 @@
+[
+  {
+    "id": 1,
+    "date": "",
+    "lunar_date": "",
+    "venue": "苍南县大渔镇天后宫",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《祭塔》正本《王老虎抢亲》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《荆钗记》"
+      }
+    ],
+    "days_info": "（演出第3天）"
+  },
+  {
+    "id": 2,
+    "date": "",
+    "lunar_date": "",
+    "venue": "苍南灵溪镇灵峰村",
+    "location_note": "",
+    "troupe": "黄岩桔香越剧二团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《送花楼会》正本《珍珠塔》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《清唱》正本《情探》"
+      }
+    ],
+    "days_info": "（演出第3天）"
+  },
+  {
+    "id": 3,
+    "date": "",
+    "lunar_date": "",
+    "venue": "乐清市芙蓉镇筋竹村孔氏祠堂",
+    "location_note": "",
+    "troupe": "临海市亿亿越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《苦菜花》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《》"
+      }
+    ],
+    "days_info": "（演出第3天）"
+  },
+  {
+    "id": 4,
+    "date": "2026年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "乐清市大荆镇李宅基村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 5,
+    "date": "",
+    "lunar_date": "",
+    "venue": "平阳县鳌江镇贵德村",
+    "location_note": "",
+    "troupe": "瑞安耀星京瓯剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 6,
+    "date": "2026年1月22日",
+    "lunar_date": "农历十二月初四",
+    "venue": "温州市龙湾区高远张氏祠堂",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [
+      {
+        "date": "1月22日",
+        "info": "下午:正本《追鱼》晚上:正本《荆钗记》"
+      },
+      {
+        "date": "1月23日",
+        "info": "下午:正本《白兔记》晚上:正本《胭脂》"
+      },
+      {
+        "date": "1月24日",
+        "info": "下午:正本《宝莲灯》晚上:正本《五女拜寿》"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 7,
+    "date": "2026年1月31日",
+    "lunar_date": "农历十二月十三",
+    "venue": "乐清市虹桥镇峃前村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 8,
+    "date": "",
+    "lunar_date": "",
+    "venue": "灵溪镇古磉村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 9,
+    "date": "2026年2月5日",
+    "lunar_date": "农历十二月十八",
+    "venue": "平阳县水头镇上店村文化礼堂",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 10,
+    "date": "2026年2月7日",
+    "lunar_date": "农历十二月二十",
+    "venue": "龙港市士金兜村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 11,
+    "date": "2026年2月16日",
+    "lunar_date": "农历十二月廿九",
+    "venue": "平阳南湖社区湖滨村董垟殿",
+    "location_note": "蘧氏宗祠",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 12,
+    "date": "2026年2月16日",
+    "lunar_date": "农历十二月廿九",
+    "venue": "平阳县青街双合殿",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 13,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "文成县平湖乡黄山村",
+    "location_note": "",
+    "troupe": "浙江小琼花越剧艺术团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 14,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "平阳县腾蛟镇南陀村",
+    "location_note": "",
+    "troupe": "宁波弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 15,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "瑞安市高楼村",
+    "location_note": "",
+    "troupe": "余姚市芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 16,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "永嘉县云岭乡西山村",
+    "location_note": "",
+    "troupe": "玉环市越剧二团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 17,
+    "date": "",
+    "lunar_date": "",
+    "venue": "2026年2月18日<农历正月初二>）平阳县南雁镇周岙村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 18,
+    "date": "2026年2月18日",
+    "lunar_date": "农历正月初二",
+    "venue": "苍南县矾山镇昌禅社区水尾宫",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 19,
+    "date": "2026年2月18日",
+    "lunar_date": "农历正月初二",
+    "venue": "苍南县南宋镇大埔山村",
+    "location_note": "",
+    "troupe": "浙江群花越剧艺术中心",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 20,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "温州市水头镇鹭鸶湾村",
+    "location_note": "",
+    "troupe": "临海市天海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 21,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "苍南县桥墩镇五凤社区圣合宫",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 22,
+    "date": "2026年2月20日",
+    "lunar_date": "农历正月初四",
+    "venue": "苍南县钱库镇钱斗村",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [
+      {
+        "date": "2月20日",
+        "info": "下午:正本《文武香球》晚上:正本《荆钗记》"
+      },
+      {
+        "date": "2月21日",
+        "info": "下午:正本《凤冠泪》晚上:正本《胭脂》"
+      },
+      {
+        "date": "2月22日",
+        "info": "下午:正本《珍珠塔》晚上:正本《天要落雨娘要嫁》"
+      },
+      {
+        "date": "2月23日",
+        "info": "下午:正本《白兔记》晚上:正本《香莲案》"
+      },
+      {
+        "date": "2月24日",
+        "info": "下午:正本《追鱼》晚上:正本《五女拜寿》"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 23,
+    "date": "2026年2月20日",
+    "lunar_date": "农历正月初四",
+    "venue": "文成县平湖村双湾村",
+    "location_note": "",
+    "troupe": "浙江小琼花越剧艺术团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 24,
+    "date": "2026年2月20日",
+    "lunar_date": "农历正月初四",
+    "venue": "苍南县赤溪镇塘头自然村",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 25,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "乐清市清江镇石古墩庄氏宗亲",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 26,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "苍南县灵溪镇观美村(沟口白马爷宫)",
+    "location_note": "",
+    "troupe": "乐清市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 27,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "龙港市平桥村杨府殿",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 28,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "温州市龙湾区沙城街道永福村",
+    "location_note": "",
+    "troupe": "三门宏运越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 29,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "平阳县敖江镇梅源社区苏岭村太阴宫",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 30,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "平阳县南雁镇溪南村",
+    "location_note": "",
+    "troupe": "浙江艺鸿越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 31,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "乐清市大荆镇镇安社区陈家山村文化礼堂",
+    "location_note": "",
+    "troupe": "浙江红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 32,
+    "date": "2026年2月24日",
+    "lunar_date": "农历正月初八",
+    "venue": "苍南县钱库镇东堡垟自然村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 33,
+    "date": "2026年2月24日",
+    "lunar_date": "农历正月初八",
+    "venue": "乐清市柳市七里港西埭村潭三圣庙",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 34,
+    "date": "2026年2月25日",
+    "lunar_date": "农历正月初九",
+    "venue": "永嘉县碧莲镇茶岙村",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 35,
+    "date": "2026年2月26日",
+    "lunar_date": "农历正月初十",
+    "venue": "乐清市城南街道盖竹村",
+    "location_note": "",
+    "troupe": "浙江青田侨都小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 36,
+    "date": "",
+    "lunar_date": "",
+    "venue": "2026年2月22日<农历正月初六>）平阳县山门镇高墩村",
+    "location_note": "",
+    "troupe": "温州市瓯剧艺术研究院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 37,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "平阳县南雁镇五十丈宝林宫",
+    "location_note": "",
+    "troupe": "宁波奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 38,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "平阳县麻步镇富源花苑",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 39,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "苍南县莒溪村三官宫",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 40,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "苍南县灵溪镇叶家垟村",
+    "location_note": "",
+    "troupe": "浙江绍兴江南越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 41,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "平阳县腾蛟镇忠训庙",
+    "location_note": "",
+    "troupe": "嵊州市越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 42,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "苍南县藻溪镇元店村元店宫",
+    "location_note": "",
+    "troupe": "浙江建文小百苑越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 43,
+    "date": "",
+    "lunar_date": "",
+    "venue": "2026年3月1日<农历正月十三>）平阳县水头镇南湖社区普美村双排殿",
+    "location_note": "",
+    "troupe": "温州市瓯剧艺术研究院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 44,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "乐清市蒲岐镇城隍庙",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 45,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "苍南县矾山镇埔坪村建福宫",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 46,
+    "date": "",
+    "lunar_date": "",
+    "venue": "2026年3月4日<农历正月十六>）平阳县南雁镇迢岩村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 47,
+    "date": "",
+    "lunar_date": "",
+    "venue": "2026年3月4日<农历正月十六>）平阳县腾蛟镇凤巢社区山边村",
+    "location_note": "",
+    "troupe": "浙江红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 48,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "平阳县南雁镇笠湖村",
+    "location_note": "",
+    "troupe": "浙江小百花越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 49,
+    "date": "2026年3月5日",
+    "lunar_date": "农历正月十七",
+    "venue": "平阳县水头镇永乐村南山宫",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 50,
+    "date": "2026年3月6日",
+    "lunar_date": "农历正月十八",
+    "venue": "乐清市蒲岐镇娄岙村",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 51,
+    "date": "2026年3月8日",
+    "lunar_date": "农历正月二十",
+    "venue": "洞头区元觉街道小北岙村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 52,
+    "date": "",
+    "lunar_date": "",
+    "venue": "2026年3月10日<农历正月廿二>）温州市陶山镇陶峰村文化礼堂",
+    "location_note": "",
+    "troupe": "上海玖洲越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 53,
+    "date": "2026年3月10日",
+    "lunar_date": "农历正月廿二",
+    "venue": "乐清市芙蓉镇良园村蔡氏大宗祠",
+    "location_note": "",
+    "troupe": "浙江众艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 54,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "乐清市南塘镇梅岙东岳庙",
+    "location_note": "",
+    "troupe": "杭州振华小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 55,
+    "date": "2026年3月14日",
+    "lunar_date": "农历正月廿六",
+    "venue": "温州市乐清市虹桥镇孙家垟村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 56,
+    "date": "2026年3月16日",
+    "lunar_date": "农历正月廿八",
+    "venue": "平阳县渔塘村老虎宫",
+    "location_note": "",
+    "troupe": "富阳越剧艺术传习院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 57,
+    "date": "2026年3月16日",
+    "lunar_date": "农历正月廿八",
+    "venue": "温州市鹿城区双屿街道康强社区",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 58,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "平阳县麻步镇渔塘文昌宫",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 59,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "平阳县麻步镇渔塘范龙村五龙庙",
+    "location_note": "",
+    "troupe": "建德市婺剧艺术三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 60,
+    "date": "2026年3月28日",
+    "lunar_date": "农历二月初十",
+    "venue": "乐清市湖雾镇定头村",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 61,
+    "date": "2026年3月28日",
+    "lunar_date": "农历二月初十",
+    "venue": "乐清市淡溪镇垟岙村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 62,
+    "date": "2026年3月29日",
+    "lunar_date": "农历二月十一",
+    "venue": "乐清市盐盆街道樟南永清宫",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 63,
+    "date": "2026年3月30日",
+    "lunar_date": "农历二月十二",
+    "venue": "温州市水头镇詹家埠华光殿",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 64,
+    "date": "2026年3月30日",
+    "lunar_date": "农历二月十二",
+    "venue": "乐清市北白象镇山前南村",
+    "location_note": "",
+    "troupe": "乐清市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 65,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "端安市仙降镇金光村金家祠堂",
+    "location_note": "",
+    "troupe": "温岭市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 66,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "乐清市城南街道石马社区",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 67,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "乐清市翁垟街道樟树下村金祠堂",
+    "location_note": "",
+    "troupe": "浙江艺海小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 68,
+    "date": "2026年4月3日",
+    "lunar_date": "农历二月十六",
+    "venue": "乐清市清江镇谢屏村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 69,
+    "date": "2026年4月3日",
+    "lunar_date": "农历二月十六",
+    "venue": "乐清市柳市镇东岸村郑氏宗祠",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 70,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "乐清市盐盆村",
+    "location_note": "",
+    "troupe": "杭州天目山越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 71,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "温州市乐清市南塘镇鲤鱼山村夏氏大宗清明戏",
+    "location_note": "",
+    "troupe": "临海市红花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 72,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "乐清市石帆霞雾村",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 73,
+    "date": "2026年4月13日",
+    "lunar_date": "农历二月廿六",
+    "venue": "温州市鹿城区江南村",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 74,
+    "date": "2026年4月13日",
+    "lunar_date": "农历二月廿六",
+    "venue": "乐清市翁垟街道九房村",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 75,
+    "date": "2026年4月19日",
+    "lunar_date": "农历三月初三",
+    "venue": "乐清市南塘镇东山太阴宫",
+    "location_note": "",
+    "troupe": "宁波百飞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 76,
+    "date": "2026年4月23日",
+    "lunar_date": "农历三月初七",
+    "venue": "乐清市清江镇毛竹山江南村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 77,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "乐清市南塘镇北港村里塘仙师庙",
+    "location_note": "",
+    "troupe": "乐清市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 78,
+    "date": "2026年5月2日",
+    "lunar_date": "农历三月十六",
+    "venue": "乐清市乐城街道支岙村",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 79,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "乐清市柳市镇龙泾村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 80,
+    "date": "2026年5月28日",
+    "lunar_date": "农历四月十二",
+    "venue": "乐清市柳市镇三里朱氏",
+    "location_note": "",
+    "troupe": "乐清市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 81,
+    "date": "2026年6月30日",
+    "lunar_date": "农历五月十六",
+    "venue": "乐清市南塘镇东山码头杨府庙",
+    "location_note": "",
+    "troupe": "临海市红花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 82,
+    "date": "2026年9月16日",
+    "lunar_date": "农历八月初六",
+    "venue": "温州市龙湾区沙城街道永阜村胡公爷班",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏艺术团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 83,
+    "date": "2027年9月15日",
+    "lunar_date": "农历八月十五",
+    "venue": "乐清市翁垟街道南山根村陈氏宗祠",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 84,
+    "date": "2026年10月11日",
+    "lunar_date": "农历九月初二",
+    "venue": "温州市龙湾区沙城街道永福村",
+    "location_note": "",
+    "troupe": "临海市红花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 85,
+    "date": "2026年10月12日",
+    "lunar_date": "农历九月初三",
+    "venue": "苍南县观美村观美宫",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 86,
+    "date": "",
+    "lunar_date": "",
+    "venue": "2026年10月27日<农历九月十八>）平阳县水头镇章岙村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 87,
+    "date": "2026年10月31日",
+    "lunar_date": "农历九月廿二",
+    "venue": "乐清市柳市镇南沙岙村",
+    "location_note": "",
+    "troupe": "临海市红花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 88,
+    "date": "2026年11月26日",
+    "lunar_date": "农历十月十八二",
+    "venue": "乐清市蒲岐镇东门外村黄氏大宗",
+    "location_note": "",
+    "troupe": "桐庐县越剧传习中心",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 89,
+    "date": "2026年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "王环市楚门镇山北村",
+    "location_note": "",
+    "troupe": "台州市黄龙越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 90,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "玉环市沙门镇桐林村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 91,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "玉环市经济开发区金海小区",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 92,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "玉环市玉城街道塘里村三官庙",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 93,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "玉环市大麦屿街道横坑村",
+    "location_note": "",
+    "troupe": "乐清市怡熙越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 94,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "玉环市大麦屿街道火叉口村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 95,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "玉环市陈屿铁龙头绿氏庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 96,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "玉环市坎门街道营岙村营房三官堂庙",
+    "location_note": "",
+    "troupe": "台州市鸿祥越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 97,
+    "date": "2026年3月5日",
+    "lunar_date": "农历正月十七",
+    "venue": "玉环市小密溪塘里庙",
+    "location_note": "",
+    "troupe": "宁波百飞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 98,
+    "date": "",
+    "lunar_date": "",
+    "venue": "玉环市玉城街道后蛟村（章十三元帅庙）",
+    "location_note": "",
+    "troupe": "台州市黄岩桔乡越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 99,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "玉环市王城街道西青塘村",
+    "location_note": "",
+    "troupe": "象山恒发越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 100,
+    "date": "2026年3月14日",
+    "lunar_date": "农历正月廿六",
+    "venue": "玉环市楚门镇田岙村冯氏家族",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 101,
+    "date": "2026年3月14日",
+    "lunar_date": "农历正月廿六",
+    "venue": "玉环市玉城街道前山头村",
+    "location_note": "",
+    "troupe": "上海明珠越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 102,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "玉环市龙溪镇灵山头",
+    "location_note": "",
+    "troupe": "浙江艺鸿越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 103,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "玉环市玉城街道渔岙土地庙",
+    "location_note": "",
+    "troupe": "嘉兴红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 104,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "玉环市清港镇鹤新村茶园庙",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 105,
+    "date": "2026年3月24日",
+    "lunar_date": "农历二月初六",
+    "venue": "玉环市清港镇尚书庙",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 106,
+    "date": "2026年3月25日",
+    "lunar_date": "农历二月初七",
+    "venue": "玉环市清港新塘头中保平水庙",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 107,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "玉环市玉城街道西滩村",
+    "location_note": "",
+    "troupe": "临海市天海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 108,
+    "date": "",
+    "lunar_date": "",
+    "venue": "玉环市清港镇王家村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 109,
+    "date": "2026年3月27日",
+    "lunar_date": "农历二月初九",
+    "venue": "玉环市大麦屿街道火叉口",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 110,
+    "date": "2026年3月30日",
+    "lunar_date": "农历二月十二",
+    "venue": "玉环玉城街道后蛟村章十三元帅庙",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 111,
+    "date": "",
+    "lunar_date": "",
+    "venue": "玉环市玉城街道东门火神庙",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 112,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "玉环市玉城街道上岙村",
+    "location_note": "",
+    "troupe": "宁波市鄞州越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 113,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "玉环市干江镇双兴村湖山头",
+    "location_note": "",
+    "troupe": "浙江艺鸿越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 114,
+    "date": "",
+    "lunar_date": "",
+    "venue": "玉环市清港镇清港村娘娘宫",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 115,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "玉环市玉城街道玉善村平水庙",
+    "location_note": "",
+    "troupe": "临海市群星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 116,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "玉环市玉城街道港湾村（后湾片）",
+    "location_note": "",
+    "troupe": "杭州振华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 117,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "玉环市玉城街道西门城隍庙",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 118,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "玉环市玉城街道县前城隍庙",
+    "location_note": "",
+    "troupe": "浙江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 119,
+    "date": "2026年4月13日",
+    "lunar_date": "农历二月廿六",
+    "venue": "玉环市芦浦镇道头村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 120,
+    "date": "2026年4月13日",
+    "lunar_date": "农历二月廿六",
+    "venue": "玉环市芦浦镇大坑村",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 121,
+    "date": "2026年4月16日",
+    "lunar_date": "农历二月廿九",
+    "venue": "玉环市大麦屿街道联丰村",
+    "location_note": "",
+    "troupe": "上海明珠越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 122,
+    "date": "",
+    "lunar_date": "",
+    "venue": "玉环市芦浦镇小塘村（章元帅庙）",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 123,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "玉环市坎门红旗玄天上帝宫",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 124,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "玉环市楚门镇吴家村禹皇庙",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 125,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "玉环市干江镇干江村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 126,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "玉环市玉城街道小普竹村",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 127,
+    "date": "",
+    "lunar_date": "",
+    "venue": "玉环市海山乡玄天上帝庙",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 128,
+    "date": "2026年4月23日",
+    "lunar_date": "农历三月初七",
+    "venue": "玉环市龙溪镇山里村",
+    "location_note": "",
+    "troupe": "台州市黄岩桔乡越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 129,
+    "date": "2026年4月23日",
+    "lunar_date": "农历三月初七",
+    "venue": "玉环市沙门镇南山村",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 130,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "玉环市东门孔子庙",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 131,
+    "date": "2026年4月30日",
+    "lunar_date": "农历三月十四",
+    "venue": "玉环市小山外村",
+    "location_note": "",
+    "troupe": "上海明珠越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 132,
+    "date": "2026年5月1日",
+    "lunar_date": "农历三月十五",
+    "venue": "玉环市楚门镇筠岗村",
+    "location_note": "",
+    "troupe": "浙江艺鸿越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 133,
+    "date": "2026年5月2日",
+    "lunar_date": "农历三月十六",
+    "venue": "玉环市玉城街道岭脚村德胜宫",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 134,
+    "date": "2026年5月3日",
+    "lunar_date": "农历三月十七",
+    "venue": "玉环市玉城街道小普竹外山",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 135,
+    "date": "2026年5月3日",
+    "lunar_date": "农历三月十七",
+    "venue": "玉环市楚门镇三联村夏洪施庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 136,
+    "date": "2026年5月3日",
+    "lunar_date": "农历三月十七",
+    "venue": "玉环市清港镇樟岙村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 137,
+    "date": "2026年5月3日",
+    "lunar_date": "农历三月十七",
+    "venue": "玉环市坎门镇灯塔村禹王庙",
+    "location_note": "",
+    "troupe": "新昌小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 138,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市玉城街道小水埠村天后宫",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 139,
+    "date": "",
+    "lunar_date": "",
+    "venue": "玉环市大麦屿十五亩天后宫",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 140,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市白马岙",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 141,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市白岩村",
+    "location_note": "",
+    "troupe": "桐庐县越剧传习中心",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 142,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市干江镇上礁门村",
+    "location_note": "",
+    "troupe": "宁波百飞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 143,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市干江镇盐盘村",
+    "location_note": "",
+    "troupe": "临海市天海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 144,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市玉城街道环礁村",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 145,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市龙溪溪东港村天后娘娘庙",
+    "location_note": "",
+    "troupe": "临海市群星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 146,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市楚门镇龙王村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 147,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市清港镇徐都天后宫",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 148,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "玉环市坎门街道金沙湾玛祖宫",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 149,
+    "date": "2026年5月12日",
+    "lunar_date": "农历三月廿六",
+    "venue": "玉环市楚门镇山后浦大帝庙",
+    "location_note": "",
+    "troupe": "乐清怡熙艺术中心",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 150,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "玉环市大麦屿街道环海村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 151,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "玉环市玉城街道三潭村西山陈府庙",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 152,
+    "date": "2026年5月14日",
+    "lunar_date": "农历三月廿八",
+    "venue": "玉环市坎门街道应东村圣母庙",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 153,
+    "date": "2026年5月23日",
+    "lunar_date": "农历四月初七",
+    "venue": "玉环市芦浦镇芦北村大沙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 154,
+    "date": "2026年5月23日",
+    "lunar_date": "农历四月初七",
+    "venue": "玉环市干江镇下栈头村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 155,
+    "date": "2026年5月2日",
+    "lunar_date": "农历四月十三",
+    "venue": "玉环市玉城街道塘墩村",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 156,
+    "date": "2026年6月1日",
+    "lunar_date": "农历四月十六",
+    "venue": "玉环市坎门镇双龙庙",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 157,
+    "date": "2026年6月2日",
+    "lunar_date": "农历四月十七",
+    "venue": "玉环市玉城街道东青村",
+    "location_note": "",
+    "troupe": "象山县万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 158,
+    "date": "2026年6月2日",
+    "lunar_date": "农历四月十七",
+    "venue": "玉环市大麦屿街道鲜叠杨府庙",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 159,
+    "date": "2026年6月9日",
+    "lunar_date": "农历四月廿四",
+    "venue": "玉环市坎门镇灯塔村杨府庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 160,
+    "date": "2026年6月11日",
+    "lunar_date": "农历四月廿六",
+    "venue": "玉环市干江镇木杓头村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 161,
+    "date": "2026年6月14日",
+    "lunar_date": "农历四月廿九",
+    "venue": "玉环市大麦屿街道福山马府庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 162,
+    "date": "2026年6月16日",
+    "lunar_date": "农历五月初二",
+    "venue": "玉环市清港镇清港村娘娘宫",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 163,
+    "date": "2026年6月16日",
+    "lunar_date": "农历五月初二",
+    "venue": "玉环市大麦屿街道古顺五显庙",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 164,
+    "date": "2026年6月20日",
+    "lunar_date": "农历五月初六",
+    "venue": "玉环市玉城街道章家村",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 165,
+    "date": "2026年6月21日",
+    "lunar_date": "农历五月初七",
+    "venue": "玉环市楚门镇中山村平水庙",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 166,
+    "date": "2026年6月21日",
+    "lunar_date": "农历五月初七",
+    "venue": "玉环市芦浦镇小金山村",
+    "location_note": "",
+    "troupe": "浙江艺海小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 167,
+    "date": "2026年6月21日",
+    "lunar_date": "农历五月初七",
+    "venue": "王环市清港镇",
+    "location_note": "",
+    "troupe": "临海市路头王越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 168,
+    "date": "2026年6月25日",
+    "lunar_date": "农历五月十一",
+    "venue": "玉环大麦屿街道新塘杨袁二府庙",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 169,
+    "date": "2026年6月30日",
+    "lunar_date": "农历五月十六",
+    "venue": "玉环市龙溪镇梅岙村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧 团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 170,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "玉环市芦浦镇旋门头扬府庙",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 171,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "玉环市楚门镇前排村杨府庙",
+    "location_note": "",
+    "troupe": "浙江九洲婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 172,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "玉环市玉城街道玉兴村大岙杨府庙",
+    "location_note": "",
+    "troupe": "杭州振华小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 173,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "玉环市瑶岙村",
+    "location_note": "",
+    "troupe": "仙居县小百花剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 174,
+    "date": "2026年7月2日",
+    "lunar_date": "农历五月十八",
+    "venue": "玉环市坎门镇大里澳杨府庙",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 175,
+    "date": "2026年7月4日",
+    "lunar_date": "农历五月二十",
+    "venue": "玉环市芦浦镇井头村上金炎帝庙",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 176,
+    "date": "2026年7月4日",
+    "lunar_date": "农历五月二十",
+    "venue": "玉环市芦蒲镇道头村",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 177,
+    "date": "2026年7月6日",
+    "lunar_date": "农历五月廿二",
+    "venue": "玉环市坎门镇花岩礁",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 178,
+    "date": "2026年7月6日",
+    "lunar_date": "农历五月廿二",
+    "venue": "玉环市芦浦镇漩门村平水禹王庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 179,
+    "date": "2026年7月6日",
+    "lunar_date": "农历五月廿二",
+    "venue": "玉环市玉城街道东门火神庙",
+    "location_note": "",
+    "troupe": "临海市群星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 180,
+    "date": "2026年7月6日",
+    "lunar_date": "农历五月廿二",
+    "venue": "玉环市大麦屿街道普南村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 181,
+    "date": "2026年8月18日",
+    "lunar_date": "农历七月初六",
+    "venue": "玉环市沙门镇灵门村",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 182,
+    "date": "2026年9月3日",
+    "lunar_date": "农历七月廿二",
+    "venue": "玉环市下礁门",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 183,
+    "date": "2026年9月19日",
+    "lunar_date": "农历八月初九",
+    "venue": "玉环市坎门镇红旗社区七星庙",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 184,
+    "date": "2026年9月20日",
+    "lunar_date": "农历八月初十",
+    "venue": "玉环市清港镇樟岙村平水庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 185,
+    "date": "2026年9月20日",
+    "lunar_date": "农历八月初十",
+    "venue": "玉环市芦浦镇芦岙村上岩",
+    "location_note": "",
+    "troupe": "浙江永康市婺剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 186,
+    "date": "2026年9月21日",
+    "lunar_date": "农历八月十一",
+    "venue": "玉环市玉城街道龟山村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 187,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "玉环市楚门镇中山村平水庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 188,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "玉环市芦浦镇金山村",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 189,
+    "date": "2026年9月28日",
+    "lunar_date": "农历八月十八",
+    "venue": "玉环市清港镇下湫村禹王宫",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 190,
+    "date": "2026年10月5日",
+    "lunar_date": "农历八月廿五",
+    "venue": "玉环市干江镇下礁门西厂村",
+    "location_note": "",
+    "troupe": "象山县万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 191,
+    "date": "",
+    "lunar_date": "",
+    "venue": "孔子庙",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 192,
+    "date": "2026年10月12日",
+    "lunar_date": "农历九月初三",
+    "venue": "玉环市大麦屿街道福昌基天仙府庙",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 193,
+    "date": "2026年10月18日",
+    "lunar_date": "农历九月初九",
+    "venue": "玉环市玉城街道上岙村",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 194,
+    "date": "2026年10月20日",
+    "lunar_date": "农历九月十一",
+    "venue": "玉环市清港镇簰头玄天庙",
+    "location_note": "",
+    "troupe": "宁波市鄞州首南芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 195,
+    "date": "2026年10月22日",
+    "lunar_date": "农历九月十三",
+    "venue": "玉环市楚门镇城隍庙",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 196,
+    "date": "2026年10月22日",
+    "lunar_date": "农历九月十三",
+    "venue": "玉环市干江镇上碓门关庙",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 197,
+    "date": "2026年10月28日",
+    "lunar_date": "农历九月十九",
+    "venue": "玉环市芦浦镇红山村",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 198,
+    "date": "2027年4月19日",
+    "lunar_date": "农历三月十三",
+    "venue": "玉环市玉城街道孔子庙",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 199,
+    "date": "2027年9月10日",
+    "lunar_date": "农历八月初十",
+    "venue": "玉环区玉城街道龟山村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 200,
+    "date": "",
+    "lunar_date": "",
+    "venue": "温岭市箬横镇亚湖村",
+    "location_note": "",
+    "troupe": "嵊州艺苑越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《祭塔》正本《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 201,
+    "date": "",
+    "lunar_date": "",
+    "venue": "温岭市城西街道芷胜庄村",
+    "location_note": "",
+    "troupe": "宁海县小百花越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《折子戏》正本《花中君子》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《折子戏》正本《桃花井》"
+      }
+    ],
+    "days_info": "（演出第4天）"
+  },
+  {
+    "id": 202,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（1月20日）下午:正本《双枪陆文龙》晚上:正本《孟丽君》温岭市九九龙湖社区",
+    "location_note": "",
+    "troupe": "杭州振华越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《送花楼会》正本《新巡按斩父》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《双女闹花堂》"
+      }
+    ],
+    "days_info": "（演出第3天）"
+  },
+  {
+    "id": 203,
+    "date": "",
+    "lunar_date": "",
+    "venue": "温岭市泽国镇筻头村",
+    "location_note": "",
+    "troupe": "安徽省义缘黄梅戏剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 204,
+    "date": "2026年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "温岭市城西街道螺屿村",
+    "location_note": "",
+    "troupe": "临海市天海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 205,
+    "date": "2026年1月28日",
+    "lunar_date": "农历十二月初十",
+    "venue": "温岭市松门镇玄真洞",
+    "location_note": "",
+    "troupe": "临海市辉煌越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 206,
+    "date": "2026年1月31日",
+    "lunar_date": "农历十二月十三",
+    "venue": "温岭市松门镇北咸田村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 207,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "温岭市滨海镇庄头村真君庙",
+    "location_note": "",
+    "troupe": "台州市彩霞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 208,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "温岭市新河镇路边村清洋庙",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 209,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "温岭市松门镇苍山村苍山庙",
+    "location_note": "",
+    "troupe": "台州越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 210,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "温岭市泽国镇西湾村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 211,
+    "date": "2026年3月3日",
+    "lunar_date": "农历正月十五",
+    "venue": "温岭市泽国镇应钱村",
+    "location_note": "",
+    "troupe": "临海市嘉艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 212,
+    "date": "2026年3月5日",
+    "lunar_date": "农历正月十七",
+    "venue": "温岭市泽国镇镇雄庙",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 213,
+    "date": "2026年3月5日",
+    "lunar_date": "农历正月十七",
+    "venue": "温岭市新河镇南栅村",
+    "location_note": "",
+    "troupe": "新昌小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 214,
+    "date": "2026年3月6日",
+    "lunar_date": "农历正月十八",
+    "venue": "温岭市新河镇三至王村泗洲庙",
+    "location_note": "",
+    "troupe": "临海市顺利小百合越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 215,
+    "date": "2026年3月6日",
+    "lunar_date": "农历正月十八",
+    "venue": "温岭市滨海镇四塘村",
+    "location_note": "",
+    "troupe": "台州红霞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 216,
+    "date": "2026年3月7日",
+    "lunar_date": "农历正月十九",
+    "venue": "温岭市新基两照庙",
+    "location_note": "",
+    "troupe": "浙江青田侨都小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 217,
+    "date": "2026年3月9日",
+    "lunar_date": "农历正月廿一",
+    "venue": "温岭市泽国镇联树塔龙村",
+    "location_note": "",
+    "troupe": "黄岩雷红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 218,
+    "date": "2026年3月9日",
+    "lunar_date": "农历正月廿一",
+    "venue": "温岭市泽国镇下郑村",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 219,
+    "date": "2026年3月10日",
+    "lunar_date": "农历正月廿二",
+    "venue": "温岭市箬横镇谢家镇东庙",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 220,
+    "date": "2026年3月13日",
+    "lunar_date": "农历正月廿五",
+    "venue": "温岭市松门镇南塘五白鹤庙",
+    "location_note": "",
+    "troupe": "上海玖洲越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 221,
+    "date": "2026年3月14日",
+    "lunar_date": "农历正月廿六",
+    "venue": "温岭市大溪镇白山庙",
+    "location_note": "",
+    "troupe": "新昌越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 222,
+    "date": "2026年3月15日",
+    "lunar_date": "农历正月廿七",
+    "venue": "温岭市泽国镇下庄村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 223,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "温岭市石塘镇小沙头村",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 224,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "温岭市松门镇河头村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 225,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "温岭市松门镇南塘一村土地庙",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 226,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "温岭市泽国镇下店村汇龙庙",
+    "location_note": "",
+    "troupe": "新昌越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 227,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "温岭市新河镇甸支村路桥庙",
+    "location_note": "",
+    "troupe": "新昌小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 228,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "温岭市松门镇文昌阁",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 229,
+    "date": "",
+    "lunar_date": "",
+    "venue": "泽国镇高坦村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 230,
+    "date": "2026年3月24日",
+    "lunar_date": "农历二月初六",
+    "venue": "温岭市横峰街道横屿庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 231,
+    "date": "2026年3月25日",
+    "lunar_date": "农历二月初七",
+    "venue": "温岭市温峤镇琛山村",
+    "location_note": "",
+    "troupe": "宁波市鄞州越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 232,
+    "date": "2026年3月25日",
+    "lunar_date": "农历二月初七",
+    "venue": "温岭市松门镇勺角庙",
+    "location_note": "",
+    "troupe": "临海市路头王越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 233,
+    "date": "2026年3月25日",
+    "lunar_date": "农历二月初七",
+    "venue": "温岭市石桥头镇土坦头村",
+    "location_note": "",
+    "troupe": "浙江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 234,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "温岭市泽国镇万堂寺庙",
+    "location_note": "",
+    "troupe": "宁波市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 235,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "温岭市箬横镇红升村东城庙",
+    "location_note": "",
+    "troupe": "临海市心平越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 236,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "温岭市新河镇石屏庙",
+    "location_note": "",
+    "troupe": "新昌小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 237,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "温岭市大溪镇下山后村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 238,
+    "date": "2026年3月28日",
+    "lunar_date": "农历二月初十",
+    "venue": "温岭市太平街道山下金村",
+    "location_note": "",
+    "troupe": "杭州越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 239,
+    "date": "2026年3月29日",
+    "lunar_date": "农历二月十一",
+    "venue": "温岭市大溪镇潘岙村",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 240,
+    "date": "",
+    "lunar_date": "",
+    "venue": "王店庄墩庙",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 241,
+    "date": "2026年3月30日",
+    "lunar_date": "农历二月十二",
+    "venue": "温岭市城北街道山头赵村",
+    "location_note": "",
+    "troupe": "余杭市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 242,
+    "date": "",
+    "lunar_date": "",
+    "venue": "温岭市石塘镇双红村禹王庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 243,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "温岭大渓镇剑锋山管理委员会",
+    "location_note": "",
+    "troupe": "临海市辉煌越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 244,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "温岭市泽国镇湖亭村湖亭庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 245,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "温岭市泽国黎明村蔡家东洋庙",
+    "location_note": "",
+    "troupe": "临海市顺利小百合越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 246,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "温岭市滨海镇新农村应家宫",
+    "location_note": "",
+    "troupe": "新昌越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 247,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "温岭市新河镇天情庙",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 248,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "温岭市大溪锦绣村(井朱)",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 249,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "温岭市泽国镇下周镇东庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 250,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "温岭市大溪镇塘岭村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 251,
+    "date": "2026年4月2日",
+    "lunar_date": "农历二月十五",
+    "venue": "温岭市泽国镇汇头林禹王殿",
+    "location_note": "",
+    "troupe": "舟山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 252,
+    "date": "2026年4月2日",
+    "lunar_date": "农历二月十五",
+    "venue": "温岭市箬横镇团结村平溪庙",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 253,
+    "date": "2026年4月2日",
+    "lunar_date": "农历二月十五",
+    "venue": "温岭市箬横镇普岙里水碓庙",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 254,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "温岭市泽国镇下郑村镇显庙",
+    "location_note": "",
+    "troupe": "温岭市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 255,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "温岭市城西街道高洋村淡水桥自然村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 256,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "温岭市滨海镇泰埾庙",
+    "location_note": "",
+    "troupe": "临海市路头王越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 257,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "温岭市大溪镇新南岙村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 258,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年4月4日<农历二月十七＞）温岭市大溪镇翁岙村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 259,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "温岭市泽国镇三衙桥观音堂",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 260,
+    "date": "2026年4月6日",
+    "lunar_date": "农历二月十九",
+    "venue": "温岭市泽国镇珠山村珠山庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 261,
+    "date": "2026年4月6日",
+    "lunar_date": "农历二月十九",
+    "venue": "温岭市大溪镇横后村",
+    "location_note": "",
+    "troupe": "宁波市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 262,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "温岭市城西街道鉴洋村",
+    "location_note": "",
+    "troupe": "宁波弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 263,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "温岭市新河镇东合村汇龙庙",
+    "location_note": "",
+    "troupe": "温岭市滨海鑫隆越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 264,
+    "date": "2026年4月11日",
+    "lunar_date": "农历二月廿四",
+    "venue": "温岭市新河镇腰塘村",
+    "location_note": "",
+    "troupe": "嘉兴红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 265,
+    "date": "2026年4月11日",
+    "lunar_date": "农历二月廿四",
+    "venue": "温岭市芝岙村芝岙庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 266,
+    "date": "2026年4月11日",
+    "lunar_date": "农历二月廿四",
+    "venue": "温岭市箬横镇高龙西殿庙",
+    "location_note": "",
+    "troupe": "杭州振华小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 267,
+    "date": "2026年4月14日",
+    "lunar_date": "农历二月廿七",
+    "venue": "温岭市城南镇新沙头村西合",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 268,
+    "date": "2026年4月14日",
+    "lunar_date": "农历二月廿七",
+    "venue": "温岭市大溪镇纶丝洋村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 269,
+    "date": "2026年4月14日",
+    "lunar_date": "农历二月廿七",
+    "venue": "温岭市新河镇塘下张凤凰山",
+    "location_note": "",
+    "troupe": "上海玖洲越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 270,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "温岭市松门远景村玄帝庙(北门庙)",
+    "location_note": "",
+    "troupe": "瑞安市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 271,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "温岭市新河镇紫湖庙",
+    "location_note": "",
+    "troupe": "杭州振华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 272,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "温岭市石塘镇里箬村玄王平水禹王庙",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 273,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "温岭市温峤镇梅溪龙皇宫",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 274,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "温岭市太平街道小河头村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 275,
+    "date": "2026年4月19日",
+    "lunar_date": "农历三月初三",
+    "venue": "温岭市新河镇鑫屿村罗氏圆谱",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 276,
+    "date": "2026年4月19日",
+    "lunar_date": "农历三月初三",
+    "venue": "温岭市泽国镇雄镇庙",
+    "location_note": "",
+    "troupe": "余姚市芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 277,
+    "date": "2026年4月21日",
+    "lunar_date": "农历三月初五",
+    "venue": "温岭市石桥头镇杨家",
+    "location_note": "",
+    "troupe": "三门宏运越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 278,
+    "date": "2026年4月22日",
+    "lunar_date": "农历三月初六",
+    "venue": "温岭市大溪镇桥里村",
+    "location_note": "",
+    "troupe": "宁波市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 279,
+    "date": "2026年4月23日",
+    "lunar_date": "农历三月初七",
+    "venue": "温岭市温峤镇金溪村",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 280,
+    "date": "2026年4月23日",
+    "lunar_date": "农历三月初七",
+    "venue": "温岭市城南镇营田村",
+    "location_note": "",
+    "troupe": "中月联献婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 281,
+    "date": "2026年4月26日",
+    "lunar_date": "农历三月初十",
+    "venue": "温岭市城东街道岩下禹王庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 282,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "温岭市横峰街道祝家洋村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 283,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "温岭市温峤镇半山村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 284,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年4月28日<农历三月十二＞）温岭市松门镇幸福村财神庙",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 285,
+    "date": "2026年4月30日",
+    "lunar_date": "农历三月十四",
+    "venue": "温岭市泽国镇夹屿协天宫",
+    "location_note": "",
+    "troupe": "宁波弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 286,
+    "date": "2026年4月30日",
+    "lunar_date": "农历三月十四",
+    "venue": "温岭市横峰街道高洋王村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 287,
+    "date": "2026年5月1日",
+    "lunar_date": "农历三月十五",
+    "venue": "温岭市温峤镇上河岙村",
+    "location_note": "",
+    "troupe": "嵊州市越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 288,
+    "date": "2026年5月2日",
+    "lunar_date": "农历三月十六",
+    "venue": "温岭市新河镇后街村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 289,
+    "date": "",
+    "lunar_date": "",
+    "venue": "珠村村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 290,
+    "date": "",
+    "lunar_date": "",
+    "venue": "温岭市横峰街道西洋村十份自然村",
+    "location_note": "",
+    "troupe": "宁波市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 291,
+    "date": "",
+    "lunar_date": "",
+    "venue": "温岭市石塘镇粗沙头村妈祖庙",
+    "location_note": "",
+    "troupe": "瑞安市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 292,
+    "date": "2026年5月6日",
+    "lunar_date": "农历三月二十",
+    "venue": "温岭市石塘镇钓浜星升村蔡家妈祖庙",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 293,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "温岭市城西街道神童门村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 294,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "温岭市石塘镇港岙村桂岙天后宫",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 295,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "温岭市石塘镇杨柳坑天后宫",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 296,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "温岭市松门镇东门城堭庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 297,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "温岭市城南镇江弯南岙村",
+    "location_note": "",
+    "troupe": "新昌小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 298,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "温岭市石塘镇钓浜寺基沙村妈祖庙",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 299,
+    "date": "2026年5月10日",
+    "lunar_date": "农历三月廿四",
+    "venue": "温岭市新河镇长屿岙里庙",
+    "location_note": "",
+    "troupe": "台州市桔香二团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 300,
+    "date": "2026年5月12日",
+    "lunar_date": "农历三月廿六",
+    "venue": "温岭市温峤镇孟家岙温西东岳宫",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 301,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "温岭市新河镇城隍庙",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 302,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "温岭市太平街道北山村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 303,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "温岭市松门镇大帝庙",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 304,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "温岭市石桥头镇东花桥村",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 305,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "温岭市大溪镇潘郎东岳宫",
+    "location_note": "",
+    "troupe": "临海市心平越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 306,
+    "date": "",
+    "lunar_date": "",
+    "venue": "温岭市温峤镇江厦村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 307,
+    "date": "2026年5月18日",
+    "lunar_date": "农历四月初二",
+    "venue": "温岭市太平街道后应村",
+    "location_note": "",
+    "troupe": "安徽芜湖黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 308,
+    "date": "2026年5月20日",
+    "lunar_date": "农历四月初四",
+    "venue": "温岭市城东街道山南前村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 309,
+    "date": "2026年5月22日",
+    "lunar_date": "农历四月初六",
+    "venue": "温岭市泽国镇株松村镇阳庙",
+    "location_note": "",
+    "troupe": "浙江众艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 310,
+    "date": "2026年5月26日",
+    "lunar_date": "农历四月初十",
+    "venue": "温岭市城北街道南山闸村庙",
+    "location_note": "",
+    "troupe": "安徽芜湖黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 311,
+    "date": "2026年5月30日",
+    "lunar_date": "农历四月十四",
+    "venue": "温岭市温峤镇江厦村",
+    "location_note": "",
+    "troupe": "嵊州市越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 312,
+    "date": "2026年5月31日",
+    "lunar_date": "农历四月十五",
+    "venue": "温岭市城西街道西岙村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 313,
+    "date": "2026年6月1日",
+    "lunar_date": "农历四月十六",
+    "venue": "温岭市城北镇沧浦村",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 314,
+    "date": "2026年6月2日",
+    "lunar_date": "农历四月十七",
+    "venue": "温岭市城南镇岭南佳苑城南首府小区",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 315,
+    "date": "2026年6月2日",
+    "lunar_date": "农历四月十七",
+    "venue": "温岭市城东街道肖南村南岙庙",
+    "location_note": "",
+    "troupe": "新昌小百花越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 316,
+    "date": "2026年6月2日",
+    "lunar_date": "农历四月十七",
+    "venue": "温岭市城北街道麻车村晋西庙",
+    "location_note": "",
+    "troupe": "新昌小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 317,
+    "date": "2026年6月3日",
+    "lunar_date": "农历四月十八",
+    "venue": "温岭市新河镇城西横陶村龙福庙",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 318,
+    "date": "2026年6月7日",
+    "lunar_date": "农历四月廿二",
+    "venue": "温岭市大溪镇宜桥村",
+    "location_note": "",
+    "troupe": "余杭市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 319,
+    "date": "2026年6月10日",
+    "lunar_date": "农历四月廿五",
+    "venue": "温岭市石塘镇曙光村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 320,
+    "date": "2026年6月16日",
+    "lunar_date": "农历五月初二",
+    "venue": "温岭市松门镇东岳宫",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 321,
+    "date": "2026年6月18日",
+    "lunar_date": "农历五月初四",
+    "venue": "温岭市城西街道合岙村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 322,
+    "date": "2026年6月21日",
+    "lunar_date": "农历五月初七",
+    "venue": "温岭市松门镇松门城隍庙",
+    "location_note": "",
+    "troupe": "象山县万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 323,
+    "date": "2026年6月21日",
+    "lunar_date": "农历五月初七",
+    "venue": "温岭市新河镇燕里庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 324,
+    "date": "2026年6月21日",
+    "lunar_date": "农历五月初七",
+    "venue": "温岭市新河镇撮屿前庙",
+    "location_note": "",
+    "troupe": "台州市黄岩雷红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 325,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市横峰街道横峰关庙",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 326,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市箬山小黄泥村",
+    "location_note": "",
+    "troupe": "嵊州市越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 327,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市东浦东关宫",
+    "location_note": "",
+    "troupe": "乐清市余丽越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 328,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市松门镇小交陈村杨府庙",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 329,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市新河镇渡南头村真君庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 330,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市松门镇淋头下街关庙",
+    "location_note": "",
+    "troupe": "台州市彩霞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 331,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市横峰街道莞渭关庙",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 332,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市泽国镇山南村山南庙",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 333,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市泽国镇横经村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 334,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市大溪镇双凌村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 335,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "温岭市箬横镇水岸村后堂庙善清寺",
+    "location_note": "",
+    "troupe": "嘉兴菊花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 336,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "温岭市松门镇松建村",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 337,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "温岭市松门镇红光村",
+    "location_note": "",
+    "troupe": "桐庐县越剧传习中心",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 338,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "温岭市大溪镇翁岙村",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 339,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "温岭市泽国镇扁屿村奇岩洞庙",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 340,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "温岭市松门镇乃崦静海宫",
+    "location_note": "",
+    "troupe": "浙江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 341,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "温岭市箬横镇高园村东庙",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 342,
+    "date": "2026年7月13日",
+    "lunar_date": "农历五月廿九",
+    "venue": "温岭市石塘镇大黄坭村",
+    "location_note": "",
+    "troupe": "宁波弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 343,
+    "date": "2026年8月5日",
+    "lunar_date": "农历六月廿三",
+    "venue": "温岭市石塘镇高岩马祖庙",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 344,
+    "date": "2026年8月7日",
+    "lunar_date": "农历六月廿五",
+    "venue": "温岭市石塘镇东山村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 345,
+    "date": "2026年8月21日",
+    "lunar_date": "农历七月初九",
+    "venue": "温岭市城南镇上绾山小江绾李家平水禹王庙",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 346,
+    "date": "2026年9月12日",
+    "lunar_date": "农历八月初二",
+    "venue": "温岭市城南镇彭下村",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 347,
+    "date": "2026年9月14日",
+    "lunar_date": "农历八月初四",
+    "venue": "温岭市箬横镇百新水淋口庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 348,
+    "date": "2026年9月14日",
+    "lunar_date": "农历八月初四",
+    "venue": "温岭市坞根镇下呈村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 349,
+    "date": "2026年9月19日",
+    "lunar_date": "农历八月初九",
+    "venue": "温岭市坞根镇风凰山禹王庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 350,
+    "date": "2026年9月20日",
+    "lunar_date": "农历八月初十",
+    "venue": "温岭市太平街道屏下村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 351,
+    "date": "2026年9月22日",
+    "lunar_date": "农历八月十二",
+    "venue": "温岭市大溪镇沙岸片",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 352,
+    "date": "2026年9月22日",
+    "lunar_date": "农历八月十二",
+    "venue": "温岭市横湖新村三都普济庙",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 353,
+    "date": "2026年9月22日",
+    "lunar_date": "农历八月十二",
+    "venue": "温岭市城北街道横塘村",
+    "location_note": "",
+    "troupe": "宁波小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 354,
+    "date": "2026年9月24日",
+    "lunar_date": "农历八月十四",
+    "venue": "温岭市新河镇白莲庙",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 355,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "温岭市温峤镇横泾堂村文化礼堂",
+    "location_note": "",
+    "troupe": "浙江彬彬芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 356,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "温岭市滨海镇横径村显圣庙",
+    "location_note": "",
+    "troupe": "上海玖洲越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 357,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "温岭市新河镇铁扬村岙囗庙",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 358,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "温岭市坞根镇白𤩹村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 359,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年9月25日<农历八月十五）温岭市松门镇松南村",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 360,
+    "date": "2026年9月26日",
+    "lunar_date": "农历八月十六",
+    "venue": "温岭市大溪镇岙增张村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 361,
+    "date": "",
+    "lunar_date": "",
+    "venue": "石桥头镇杨家浦三都平海庙",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 362,
+    "date": "2026年9月30日",
+    "lunar_date": "农历八月二十",
+    "venue": "温岭市城南镇观岙村禹王宫",
+    "location_note": "",
+    "troupe": "象山县万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 363,
+    "date": "2026年10月2日",
+    "lunar_date": "农历八月廿二",
+    "venue": "温岭市城南镇蒲洞村",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 364,
+    "date": "2026年10月2日",
+    "lunar_date": "农历八月廿二",
+    "venue": "温岭市大溪镇陈洋村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 365,
+    "date": "2026年10月11日",
+    "lunar_date": "农历九月初二",
+    "venue": "温岭市城南镇岙环城隍庙",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 366,
+    "date": "2026年10月17日",
+    "lunar_date": "农历九月初八",
+    "venue": "温岭市新河镇城隍庙",
+    "location_note": "",
+    "troupe": "乐清市怡熙越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 367,
+    "date": "2026年10月17日",
+    "lunar_date": "农历九月初八",
+    "venue": "温岭市大溪镇盘山新村",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 368,
+    "date": "2026年10月27日",
+    "lunar_date": "农历九月十八",
+    "venue": "温岭市新河镇金港新村龙隍宫",
+    "location_note": "",
+    "troupe": "台州市彩霞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 369,
+    "date": "2026年10月27日",
+    "lunar_date": "农历九月十八",
+    "venue": "温岭市滨海镇新街关帝庙",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 370,
+    "date": "2026年11月10日",
+    "lunar_date": "农历十月初二",
+    "venue": "温岭市新河镇渡南头真君寺",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 371,
+    "date": "2026年11月18日",
+    "lunar_date": "农历十月初十",
+    "venue": "温岭市大溪镇西山村",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 372,
+    "date": "2026年11月21日",
+    "lunar_date": "农历十月十三",
+    "venue": "温岭市泽国镇大池陈村",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 373,
+    "date": "2026年11月25日",
+    "lunar_date": "农历十月十七",
+    "venue": "温岭市泽国镇西桐村",
+    "location_note": "",
+    "troupe": "余杭小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 374,
+    "date": "2026年11月30日",
+    "lunar_date": "农历十月廿二",
+    "venue": "温岭市泽国镇筻头村",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 375,
+    "date": "2027年4月8日",
+    "lunar_date": "农历三月初二",
+    "venue": "温岭市松门镇远景村玄天上帝庙",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 376,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "路桥区峰江街道十份老人协会",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 377,
+    "date": "2026年2月23日",
+    "lunar_date": "农历正月初七",
+    "venue": "路桥区峰江街道白枫桥庙",
+    "location_note": "",
+    "troupe": "海宁市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 378,
+    "date": "2026年2月23日",
+    "lunar_date": "农历正月初七",
+    "venue": "路桥区金清镇黄琅定海庙",
+    "location_note": "",
+    "troupe": "仙居小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 379,
+    "date": "2026年2月24日",
+    "lunar_date": "农历正月初八",
+    "venue": "路桥区横街镇镇东庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 380,
+    "date": "2026年2月26日",
+    "lunar_date": "农历正月初十",
+    "venue": "路桥区路北街道坦田旺",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 381,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "路桥区新桥镇前平桥村灵熙庙",
+    "location_note": "",
+    "troupe": "温岭市小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 382,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "路桥区金清镇双明村平德庙",
+    "location_note": "",
+    "troupe": "杭州振华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 383,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "路桥区新桥镇扶雅社区青龙庙",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 384,
+    "date": "2026年3月3日",
+    "lunar_date": "农历正月十五",
+    "venue": "路桥区横街镇云雾村德新宫",
+    "location_note": "",
+    "troupe": "临海市群瑆越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 385,
+    "date": "2026年3月6日",
+    "lunar_date": "农历正月十八",
+    "venue": "路桥区苍前村",
+    "location_note": "",
+    "troupe": "临海市路头王越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 386,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "路桥区路北街道三角陈村",
+    "location_note": "",
+    "troupe": "临海市宏华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 387,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "路桥区横街镇天赐湖村湖下庙",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 388,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "路桥区泉井蔡家洋迴龙宫",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 389,
+    "date": "2026年3月15日",
+    "lunar_date": "农历正月廿七",
+    "venue": "路桥区路南街道西夏村",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 390,
+    "date": "2026年3月18日",
+    "lunar_date": "农历正月三十",
+    "venue": "路桥区峰江街道亭屿村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 391,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "路桥区金清镇霓岙村百花庙",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 392,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "路桥区蓬街镇文武宫",
+    "location_note": "",
+    "troupe": "仙居小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 393,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "路桥区蓬街镇蓬街居汇龙庙",
+    "location_note": "",
+    "troupe": "宁波清越越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 394,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "路桥区新桥镇凤阳徐氏圆谱",
+    "location_note": "",
+    "troupe": "嵊州市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 395,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "路桥区金清镇大浦村孔相公庙",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 396,
+    "date": "2026年3月28日",
+    "lunar_date": "农历二月初十",
+    "venue": "路桥区逢街镇贺氏祠堂",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 397,
+    "date": "2026年3月29日",
+    "lunar_date": "农历二月十一",
+    "venue": "路桥蓬街填赛龙村上赛龙宫",
+    "location_note": "",
+    "troupe": "杭州振华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 398,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "路桥区横街镇洋屿山村",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 399,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "路桥区路南街道肖王村",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 400,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "路桥区金清镇上塘港禹王庙",
+    "location_note": "",
+    "troupe": "上海玖洲越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 401,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "路桥区蓬街镇青龙浦村沙蟹宫",
+    "location_note": "",
+    "troupe": "宁波清越越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 402,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "路桥区蓬街镇尚家祠堂",
+    "location_note": "",
+    "troupe": "仙居小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 403,
+    "date": "2026年4月2日",
+    "lunar_date": "农历二月十五",
+    "venue": "路桥区石浜村",
+    "location_note": "",
+    "troupe": "宁波市中誉越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 404,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "路桥区峰江街道白枫桥庙",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 405,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "路桥区金清镇沙头郭村赛龙宫",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 406,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "路桥区路北衔道栅泾庙",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 407,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "路桥区横街镇杨桥村龙泉庙",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 408,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "路桥区新桥镇打蓬林福龙庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 409,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "路桥区路南街道灵山寺",
+    "location_note": "",
+    "troupe": "嘉兴红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 410,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "路桥区横街镇杨桥村龙泉宫",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏艺术团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 411,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "路桥区桐屿街道后洋金村兴龙宫",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 412,
+    "date": "2026年4月6日",
+    "lunar_date": "农历二月十九",
+    "venue": "路桥区金清镇新双庙村小杨府庙",
+    "location_note": "",
+    "troupe": "宁波清越越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 413,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "路桥区新桥镇关帝庙",
+    "location_note": "",
+    "troupe": "仙居小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 414,
+    "date": "2026年4月9日",
+    "lunar_date": "农历二月廿二",
+    "venue": "路桥区蓬街镇杨府庙",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 415,
+    "date": "2026年4月9日",
+    "lunar_date": "农历二月廿二",
+    "venue": "路桥区金清镇加惠殿东胜庙",
+    "location_note": "",
+    "troupe": "宁波百飞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 416,
+    "date": "2026年4月11日",
+    "lunar_date": "农历二月廿四",
+    "venue": "路桥区蓬街镇启明村圣龙庙",
+    "location_note": "",
+    "troupe": "浙江歆缘越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 417,
+    "date": "2026年4月13日",
+    "lunar_date": "农历二月廿六",
+    "venue": "路桥区金清镇卷桥东岳庙",
+    "location_note": "",
+    "troupe": "临海市心平越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 418,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "路桥区峰江街道白枫岙道院庙",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 419,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "路桥区金清镇下梁岱石庙",
+    "location_note": "",
+    "troupe": "嵊州市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 420,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "路桥区金清镇林家村",
+    "location_note": "",
+    "troupe": "余姚市芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 421,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "路桥区金清镇妈祖庙",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 422,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "路桥区峰江街道白枫岙东关庙",
+    "location_note": "",
+    "troupe": "临海市天海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 423,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "路桥区洪阳三保东狱宫",
+    "location_note": "",
+    "troupe": "台州彩霞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 424,
+    "date": "2026年5月14日",
+    "lunar_date": "农历三月廿八",
+    "venue": "路桥区金清镇海峰村龙王宫",
+    "location_note": "",
+    "troupe": "上海玖洲越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 425,
+    "date": "2026年5月28日",
+    "lunar_date": "农历四月十二",
+    "venue": "路桥区路南街道古岙村福民庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 426,
+    "date": "2026年5月29日",
+    "lunar_date": "农历四月十三",
+    "venue": "路桥区螺洋街道三保倪石庙",
+    "location_note": "",
+    "troupe": "临海市路头王越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 427,
+    "date": "2026年5月31日",
+    "lunar_date": "农历四月十五",
+    "venue": "路桥区蓬街镇镇海村爵阁庙",
+    "location_note": "",
+    "troupe": "宁波清越越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 428,
+    "date": "2026年6月5日",
+    "lunar_date": "农历四月二十",
+    "venue": "路桥区峰江镇佐川胡村三界庙",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 429,
+    "date": "2026年6月12日",
+    "lunar_date": "农历四月廿七",
+    "venue": "路桥区金清镇百步沙宫",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 430,
+    "date": "2026年6月18日",
+    "lunar_date": "农历五月初四",
+    "venue": "路桥区路桥街道丁岙村三清宫",
+    "location_note": "",
+    "troupe": "临海市顺利小百合越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 431,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "路桥区峰江街道白枫岙水仙庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 432,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "路桥区峰江街道李蓍埭村",
+    "location_note": "",
+    "troupe": "嵊州市越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 433,
+    "date": "2026年9月20日",
+    "lunar_date": "农历八月初十",
+    "venue": "路桥区金清镇下明村平德庙",
+    "location_note": "",
+    "troupe": "宁波清越越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 434,
+    "date": "2026年9月21日",
+    "lunar_date": "农历八月十一",
+    "venue": "路桥区赵王栅泾庙",
+    "location_note": "",
+    "troupe": "临海市荣幸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 435,
+    "date": "2026年9月22日",
+    "lunar_date": "农历八月十二",
+    "venue": "路桥区路桥街道丁岙村三清宫",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏艺术团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 436,
+    "date": "2026年9月24日",
+    "lunar_date": "农历八月十四",
+    "venue": "路桥区峰江街道下泾头东岳庙",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 437,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "路桥区峰江街道戴家庙",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 438,
+    "date": "2026年9月30日",
+    "lunar_date": "农历八月二十",
+    "venue": "路桥区金清镇孔相公庙",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 439,
+    "date": "2026年10月1日",
+    "lunar_date": "农历八月廿一",
+    "venue": "路桥区路桥街道丁岙山三清宫",
+    "location_note": "",
+    "troupe": "临海市荣幸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 440,
+    "date": "2026年10月7日",
+    "lunar_date": "农历八月廿七",
+    "venue": "路桥区峰江街道白枫桥石门庙",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 441,
+    "date": "2026年11月5日",
+    "lunar_date": "农历九月廿七",
+    "venue": "路桥区路南街道三清宫",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 442,
+    "date": "2026年11月22日",
+    "lunar_date": "农历十月十四",
+    "venue": "路桥区蓬街镇镇海村新北村静海庙",
+    "location_note": "",
+    "troupe": "宁波清越越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 443,
+    "date": "2026年11月30日",
+    "lunar_date": "农历十月廿二",
+    "venue": "路桥区金清镇上圹港禹王庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 444,
+    "date": "2026年12月5日",
+    "lunar_date": "农历十月廿七",
+    "venue": "路桥区蓬街镇竿蓬村竿蓬殿",
+    "location_note": "",
+    "troupe": "宁波清越越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 445,
+    "date": "",
+    "lunar_date": "",
+    "venue": "椒江区章安街道前街村",
+    "location_note": "",
+    "troupe": "临海市国鑫越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 446,
+    "date": "",
+    "lunar_date": "",
+    "venue": "椒江区章安街道柏加王村",
+    "location_note": "",
+    "troupe": "台州市黄岩雷红越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《秦木亮休妻》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《》"
+      }
+    ],
+    "days_info": "（演出第4天）"
+  },
+  {
+    "id": 447,
+    "date": "",
+    "lunar_date": "",
+    "venue": "椒江区前所街道道感堂村",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 448,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月4日<农历十二月十七）椒江区赤龙山杨府庙",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 449,
+    "date": "",
+    "lunar_date": "",
+    "venue": "泉庙",
+    "location_note": "",
+    "troupe": "三门宏运越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 450,
+    "date": "2026年2月21日",
+    "lunar_date": "农历正月初五",
+    "venue": "椒江区章安街道蔡桥后洋陈兴隆殿",
+    "location_note": "",
+    "troupe": "嵊州市越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 451,
+    "date": "2026年2月25日",
+    "lunar_date": "农历正月初九",
+    "venue": "椒江区海办街道岳头村（东岳宫）",
+    "location_note": "",
+    "troupe": "临海市国鑫越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 452,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "椒江区葭芷街道花径村伏波庙",
+    "location_note": "",
+    "troupe": "临海市路头王越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 453,
+    "date": "2026年3月3日",
+    "lunar_date": "农历正月十五",
+    "venue": "椒江区洪家街道上洋邱太保庙",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 454,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "椒江区海门街道太和道院",
+    "location_note": "",
+    "troupe": "临海荣幸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 455,
+    "date": "2026年3月18日",
+    "lunar_date": "农历正月三十",
+    "venue": "椒江区葭芷街道上马前大村",
+    "location_note": "",
+    "troupe": "台州市黄岩雷红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 456,
+    "date": "2026年3月19日",
+    "lunar_date": "农历二月初一",
+    "venue": "椒江区三甲街道石柱殿",
+    "location_note": "",
+    "troupe": "上海玖洲越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 457,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "椒江区统一村",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 458,
+    "date": "2026年3月22日",
+    "lunar_date": "农历二月初四",
+    "venue": "椒江区马庄村",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 459,
+    "date": "2026年3月22日",
+    "lunar_date": "农历二月初四",
+    "venue": "台州湾新区三甲街道晨光村东宁庙",
+    "location_note": "",
+    "troupe": "临海市荣幸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 460,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "椒江区洪家街道钗洋村",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 461,
+    "date": "",
+    "lunar_date": "",
+    "venue": "椒江区洪家街道龙潭岙",
+    "location_note": "",
+    "troupe": "台州小橘花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 462,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "椒江区洪家街道后邱合镇庙",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 463,
+    "date": "2026年3月29日",
+    "lunar_date": "农历二月十一",
+    "venue": "椒江区洪家上洋桥镇东庙",
+    "location_note": "",
+    "troupe": "宁波市鄞州首南芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 464,
+    "date": "2026年3月30日",
+    "lunar_date": "农历二月十二",
+    "venue": "椒江区洪家街道长兴村",
+    "location_note": "",
+    "troupe": "嘉兴红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 465,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "椒江区葭沚街道方桥村前岸村",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 466,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "椒江区白云街道泾边村横经堂",
+    "location_note": "",
+    "troupe": "浙江歆缘越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 467,
+    "date": "2026年4月1日",
+    "lunar_date": "农历二月十四",
+    "venue": "椒江区水门村翁村庙",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 468,
+    "date": "2026年4月3日",
+    "lunar_date": "农历二月十六",
+    "venue": "椒江区章安街道华景村集圣庙",
+    "location_note": "",
+    "troupe": "黄岩雷红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 469,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "椒江区三甲街道沿海村白龙庙",
+    "location_note": "",
+    "troupe": "浙江众艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 470,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "椒江区白云街道万福禅寺",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 471,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "椒江区洪家街道合作村",
+    "location_note": "",
+    "troupe": "乐清市怡熙越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 472,
+    "date": "2026年4月9日",
+    "lunar_date": "农历二月廿二",
+    "venue": "椒江区洪家街道东洋陈杨府庙",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 473,
+    "date": "",
+    "lunar_date": "",
+    "venue": "椒江区洪家街道塔下程村",
+    "location_note": "",
+    "troupe": "台州彩霞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 474,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "椒江区葭芷街道栅桥村南路徐毓灵庙",
+    "location_note": "",
+    "troupe": "椒江青年越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 475,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "椒江区洪家街道虎啸坦村",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 476,
+    "date": "2026年4月22日",
+    "lunar_date": "农历三月初六",
+    "venue": "椒江区章安街道东埭村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 477,
+    "date": "2026年4月27日",
+    "lunar_date": "农历三月十一",
+    "venue": "椒江区洪家街道祝昌村",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 478,
+    "date": "2026年4月30日",
+    "lunar_date": "农历三月十四",
+    "venue": "椒江区桑叶殿",
+    "location_note": "",
+    "troupe": "嘉兴红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 479,
+    "date": "2026年5月4日",
+    "lunar_date": "农历三月十八",
+    "venue": "椒江区前所街道外西村",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 480,
+    "date": "",
+    "lunar_date": "",
+    "venue": "椒江区横河蒋村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 481,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "椒江区大路王村",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 482,
+    "date": "",
+    "lunar_date": "",
+    "venue": "东埭村",
+    "location_note": "",
+    "troupe": "仙居小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 483,
+    "date": "2026年5月28日",
+    "lunar_date": "农历四月十二",
+    "venue": "椒江区葭沚街道东上洋",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 484,
+    "date": "2026年5月30日",
+    "lunar_date": "农历四月十四",
+    "venue": "椒江区洪家街道义民村水埾庙",
+    "location_note": "",
+    "troupe": "临海市心平越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 485,
+    "date": "2026年5月31日",
+    "lunar_date": "农历四月十五",
+    "venue": "椒江区三甲街道海丰村埭头庙",
+    "location_note": "",
+    "troupe": "临海市宏华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 486,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "椒江区大板桥武圣庙",
+    "location_note": "",
+    "troupe": "余姚市芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 487,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "椒江区葭沚街道中村",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 488,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "椒江区洪家街道將军殿",
+    "location_note": "",
+    "troupe": "三门县繁红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 489,
+    "date": "2026年7月6日",
+    "lunar_date": "农历五月廿二",
+    "venue": "椒江区下陈街道横塘小暑庙",
+    "location_note": "",
+    "troupe": "湖州市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 490,
+    "date": "2026年9月15日",
+    "lunar_date": "农历八月初五",
+    "venue": "椒江区洪家街道塔下程竹溪庙",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 491,
+    "date": "2026年9月25日",
+    "lunar_date": "农历八月十五",
+    "venue": "椒江区葭芷街道马庄东镇堂",
+    "location_note": "",
+    "troupe": "椒江青年越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 492,
+    "date": "2026年10月17日",
+    "lunar_date": "农历九月初八",
+    "venue": "椒江区葭芷街道见龙庙",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 493,
+    "date": "2026年11月11日",
+    "lunar_date": "农历十月初三",
+    "venue": "椒江区三甲街道青龙宫",
+    "location_note": "",
+    "troupe": "嘉兴红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 494,
+    "date": "2026年11月12日",
+    "lunar_date": "农历十月初四",
+    "venue": "椒江区平桥小区龙兴庙",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 495,
+    "date": "2026年11月13日",
+    "lunar_date": "农历十月初五",
+    "venue": "椒江区葭沚街道红星村龙发庙",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 496,
+    "date": "2026年11月28日",
+    "lunar_date": "农历十月二十",
+    "venue": "椒江区葭沚街道红星村邓桥殿",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 497,
+    "date": "",
+    "lunar_date": "",
+    "venue": "黄岩区头陀镇九龙城隍庙",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 498,
+    "date": "2026年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "黄岩区北洋镇称歇村",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 499,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年1月21日<农历十二月初三＞）黄岩区头陀镇溪头下西山自然村",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 500,
+    "date": "2026年1月28日",
+    "lunar_date": "农历十二月初十",
+    "venue": "黄岩区新前街道黄坦村洪家山",
+    "location_note": "",
+    "troupe": "临海市群星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 501,
+    "date": "2026年2月5日",
+    "lunar_date": "农历十二月十八",
+    "venue": "黄岩区宁溪镇乌岩头村",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 502,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月10日<农历十二月廿三）黄岩方远合意阅山会所（浙江省台州市黄岩区印山路与方山路交叉口西南方向186米）",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 503,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "黄岩区高桥镇下浦郑村",
+    "location_note": "",
+    "troupe": "临海市荣幸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 504,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月17日<农历正月初一>)黄岩区上洋乡沈岙村",
+    "location_note": "",
+    "troupe": "浙江小皇后越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 505,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "黄岩区新前街道屿新村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 506,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "黄岩区富山乡畴路村",
+    "location_note": "",
+    "troupe": "浙江艺海小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 507,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "黄岩区宁溪镇富山双西村",
+    "location_note": "",
+    "troupe": "台州市鸿祥越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 508,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "黄岩区屿头乡金廊村引坑自然村",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 509,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "黄岩区宁溪镇上桧村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 510,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "黄岩区吴家岙村",
+    "location_note": "",
+    "troupe": "嵊州市梁祝越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 511,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "黄岩区新前街道三合村亿嘉房产服务有限公司",
+    "location_note": "",
+    "troupe": "台州小橘花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 512,
+    "date": "2026年2月23日",
+    "lunar_date": "农历正月初七",
+    "venue": "黄岩区北城街道白石道头平安宫",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 513,
+    "date": "2026年3月6日",
+    "lunar_date": "农历正月十八",
+    "venue": "黄岩区北城街道下洋顾村",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 514,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "黄岩区新前街道双丰村",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 515,
+    "date": "2026年3月25日",
+    "lunar_date": "农历二月初七",
+    "venue": "黄岩区北城街道后庄村",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 516,
+    "date": "2026年3月31日",
+    "lunar_date": "农历二月十三",
+    "venue": "黄岩区高桥街道胜利村龙山庙",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 517,
+    "date": "2026年4月2日",
+    "lunar_date": "农历二月十五",
+    "venue": "黄岩区头陀镇上路村老爷殿",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 518,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "黄岩区新前街道泾岸村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 519,
+    "date": "2026年4月5日",
+    "lunar_date": "农历二月十八",
+    "venue": "黄岩区路边村赐福宫",
+    "location_note": "",
+    "troupe": "浙江余姚芳华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 520,
+    "date": "2026年4月6日",
+    "lunar_date": "农历二月十九",
+    "venue": "黄岩区毛竹坦",
+    "location_note": "",
+    "troupe": "上海明珠越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 521,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "黄岩区太婆堂云龙宫",
+    "location_note": "",
+    "troupe": "临海市荣幸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 522,
+    "date": "2026年4月14日",
+    "lunar_date": "农历二月廿七",
+    "venue": "黄岩区西城街道东路村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 523,
+    "date": "",
+    "lunar_date": "",
+    "venue": "黄岩区院桥镇升上洋村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 524,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "黄岩区澄江街道东江河村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 525,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "黄岩区澄江街道石柜岙村",
+    "location_note": "",
+    "troupe": "象山县万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 526,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "黄岩区西城街道大桥头应岭庙",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 527,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "黄岩区高桥镇杏林村祝梁庙",
+    "location_note": "",
+    "troupe": "宁波市鄞州首南芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 528,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "黄岩区西城街道岭下葛村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 529,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "黄岩区北城街道庆丰社区塔水桥兴灵宫",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 530,
+    "date": "2026年5月1日",
+    "lunar_date": "农历三月十五",
+    "venue": "黄岩区澄江街道松岩村石钜岙口",
+    "location_note": "",
+    "troupe": "浙江艺海小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 531,
+    "date": "2026年5月1日",
+    "lunar_date": "农历三月十五",
+    "venue": "黄岩区澄江街道东岙村武圣庙",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 532,
+    "date": "2026年5月3日",
+    "lunar_date": "农历三月十七",
+    "venue": "黄岩区院桥镇前宅村",
+    "location_note": "",
+    "troupe": "杭州振华小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 533,
+    "date": "2026年5月13日",
+    "lunar_date": "农历三月廿七",
+    "venue": "黄岩区东岳庙",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 534,
+    "date": "2026年6月6日",
+    "lunar_date": "农历四月廿一",
+    "venue": "黄岩区院桥镇沙门店村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 535,
+    "date": "2026年6月10日",
+    "lunar_date": "农历四月廿五",
+    "venue": "黄岩区高桥街道下浦郑村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 536,
+    "date": "",
+    "lunar_date": "",
+    "venue": "黄岩区院桥镇原鸡笼山村（现柏山新城北苑）",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 537,
+    "date": "2026年7月1日",
+    "lunar_date": "农历五月十七",
+    "venue": "黄岩区中岙里关庙",
+    "location_note": "",
+    "troupe": "临海市路头王越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 538,
+    "date": "",
+    "lunar_date": "",
+    "venue": "黄岩区高桥街道三童岙里村文化礼堂",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 539,
+    "date": "2026年9月12日",
+    "lunar_date": "农历八月初二",
+    "venue": "黄岩区西城街道上罗家汇村三圣庙",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 540,
+    "date": "2026年9月19日",
+    "lunar_date": "农历八月初九",
+    "venue": "黄岩区七里村后合庙",
+    "location_note": "",
+    "troupe": "浙江弘星越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 541,
+    "date": "2026年9月21日",
+    "lunar_date": "农历八月十一",
+    "venue": "黄岩区澄江街道桥前村东保庙",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 542,
+    "date": "2027年9月11日",
+    "lunar_date": "农历八月十一",
+    "venue": "黄岩区澄江街道桥前村东保庙",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 543,
+    "date": "2026年10月11日",
+    "lunar_date": "农历九月初二",
+    "venue": "黄岩区头陀镇林龙新村龙王坑四姑平平水庙",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 544,
+    "date": "2026年10月20日",
+    "lunar_date": "农历九月十一",
+    "venue": "黄岩区澄江街道东岙里",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 545,
+    "date": "",
+    "lunar_date": "",
+    "venue": "黄岩区茅畲乡行宫五圣庙(上街村)",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 546,
+    "date": "2026年11月22日",
+    "lunar_date": "农历十月十四",
+    "venue": "黄岩区头陀镇下路村",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 547,
+    "date": "",
+    "lunar_date": "",
+    "venue": "临海市邵家渡街道赤水村",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 548,
+    "date": "",
+    "lunar_date": "",
+    "venue": "文化礼堂",
+    "location_note": "",
+    "troupe": "临海市弘芳越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 549,
+    "date": "",
+    "lunar_date": "",
+    "venue": "临海市杜桥镇楼下村",
+    "location_note": "",
+    "troupe": "三门县繁红越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《大堂会。下本》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《》"
+      }
+    ],
+    "days_info": "（演出第4天）"
+  },
+  {
+    "id": 550,
+    "date": "",
+    "lunar_date": "",
+    "venue": "临海市桃渚镇川下村",
+    "location_note": "",
+    "troupe": "三门鸿玲苑艺越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《十八年奇花》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《》"
+      }
+    ],
+    "days_info": "（演出第4天）"
+  },
+  {
+    "id": 551,
+    "date": "",
+    "lunar_date": "",
+    "venue": "永佑庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《孟丽君斩女"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 552,
+    "date": "",
+    "lunar_date": "",
+    "venue": "临海市白水洋镇清水坑假山村",
+    "location_note": "",
+    "troupe": "浙江艺海小百花越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《何文秀》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《清唱》正本《》"
+      }
+    ],
+    "days_info": "（演出第2天）"
+  },
+  {
+    "id": 553,
+    "date": "2026年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "临海市大田街道寺后村",
+    "location_note": "",
+    "troupe": "扬州胜利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 554,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年1月24日<农历十二月初六）临海市邵家渡街道山下坦村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 555,
+    "date": "2026年1月26日",
+    "lunar_date": "农历十二月初八",
+    "venue": "临海市东塍镇呈岐村",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 556,
+    "date": "2026年1月31日",
+    "lunar_date": "农历十二月十三",
+    "venue": "临海市汇溪镇浚头村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 557,
+    "date": "2026年2月13日",
+    "lunar_date": "农历十二月廿六",
+    "venue": "临海市上盘镇旧城村",
+    "location_note": "",
+    "troupe": "三门县繁红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 558,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月15日<农历十二月廿八＞）临海市东塍镇隔溪后山金村",
+    "location_note": "",
+    "troupe": "台州市黄岩雷红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 559,
+    "date": "2026年2月18日",
+    "lunar_date": "农历正月初二",
+    "venue": "临海市汇溪镇南城村",
+    "location_note": "",
+    "troupe": "临海市虞会利越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 560,
+    "date": "2026年2月18日",
+    "lunar_date": "农历正月初二",
+    "venue": "临海市杜桥镇大汾汾西村泰山宫",
+    "location_note": "",
+    "troupe": "嘉兴红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 561,
+    "date": "2026年2月18日",
+    "lunar_date": "农历正月初二",
+    "venue": "临海市杜桥镇汾东村",
+    "location_note": "",
+    "troupe": "上海明珠越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 562,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "临海市桃渚镇石桌塘村",
+    "location_note": "",
+    "troupe": "台州市椒江弘艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 563,
+    "date": "2026年2月23日",
+    "lunar_date": "农历正月初七",
+    "venue": "临海市崔岙村",
+    "location_note": "",
+    "troupe": "浙江琼芳越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 564,
+    "date": "2026年2月23日",
+    "lunar_date": "农历正月初七",
+    "venue": "临海市杜桥镇穿山村金氏总族",
+    "location_note": "",
+    "troupe": "台州市中馨越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 565,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "临海市沿江镇西岑村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 566,
+    "date": "2026年3月5日",
+    "lunar_date": "农历正月十七",
+    "venue": "临海市杜桥镇土城村大帝殿东柱",
+    "location_note": "",
+    "troupe": "三门县繁红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 567,
+    "date": "2026年3月7日",
+    "lunar_date": "农历正月十九",
+    "venue": "临海市沿江镇水洋村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 568,
+    "date": "2026年3月16日",
+    "lunar_date": "农历正月廿八",
+    "venue": "临海市上盘镇金杏灯老年协会",
+    "location_note": "",
+    "troupe": "三门县繁红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 569,
+    "date": "2026年3月28日",
+    "lunar_date": "农历二月初十",
+    "venue": "临海市涌泉镇延恩村外岙村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 570,
+    "date": "2026年4月2日",
+    "lunar_date": "农历二月十五",
+    "venue": "临海市沿江镇上百岩村",
+    "location_note": "",
+    "troupe": "嵊州市越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 571,
+    "date": "2026年4月10日",
+    "lunar_date": "农历二月廿三",
+    "venue": "临海市桃渚镇牛路头村",
+    "location_note": "",
+    "troupe": "象山实验越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 572,
+    "date": "2026年4月16日",
+    "lunar_date": "农历二月廿九",
+    "venue": "临海市桃渚镇牛路头村",
+    "location_note": "",
+    "troupe": "临海市群瑆越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 573,
+    "date": "2026年4月18日",
+    "lunar_date": "农历三月初二",
+    "venue": "临海市杜桥镇河东下洋林自然村西庵庙",
+    "location_note": "",
+    "troupe": "三门县繁红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 574,
+    "date": "2026年5月2日",
+    "lunar_date": "农历三月十六",
+    "venue": "临海市上盘镇老塘岸村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 575,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年6月？日<农历四月？>）临海市上盘镇甲石头村",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 576,
+    "date": "2026年9月10日",
+    "lunar_date": "农历七月廿九",
+    "venue": "临海市杜桥镇三石浦湿灵庙",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 577,
+    "date": "",
+    "lunar_date": "",
+    "venue": "三门县海润街道上枫坑村",
+    "location_note": "",
+    "troupe": "宁波象鹤越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 578,
+    "date": "",
+    "lunar_date": "",
+    "venue": "盐灶村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 579,
+    "date": "2026年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "三门县建跳镇大塘村",
+    "location_note": "",
+    "troupe": "象山实验越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 580,
+    "date": "2026年1月25日",
+    "lunar_date": "农历十二月初七",
+    "venue": "三门县海润街道潺岙村村委会",
+    "location_note": "",
+    "troupe": "浙江歆缘越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 581,
+    "date": "2026年1月26日",
+    "lunar_date": "农历十二月初八",
+    "venue": "三门县横渡镇东屏村",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 582,
+    "date": "2026年1月26日",
+    "lunar_date": "农历十二月初八",
+    "venue": "三门县蛇蟠乡黄泥洞村",
+    "location_note": "",
+    "troupe": "台州市椒江越剧艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 583,
+    "date": "2026年1月31日",
+    "lunar_date": "农历十二月十三",
+    "venue": "三门县横渡镇深土洋村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 584,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月5日<农历十二月十八）三门县浦坝港镇坑林村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 585,
+    "date": "2026年2月6日",
+    "lunar_date": "农历十二月十九",
+    "venue": "三门方远天御一品（工业大道与朝阳路交叉口北280号）原",
+    "location_note": "",
+    "troupe": "杭州越剧二团",
+    "shows": [
+      {
+        "date": "2月6日",
+        "info": "夜场《五女拜寿》"
+      },
+      {
+        "date": "2月7日",
+        "info": "日场《王老虎抢亲》夜场《桐江雨》》"
+      },
+      {
+        "date": "2月8日",
+        "info": "日场《芝麻官》夜场《国太回朝》"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 586,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月11<农历十二月廿四>）三门县横渡镇南豪村",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 587,
+    "date": "2026年2月18日",
+    "lunar_date": "农历正月初二",
+    "venue": "三门县亭旁镇挂帘村",
+    "location_note": "",
+    "troupe": "宁海蕾蕾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 588,
+    "date": "2026年2月21日",
+    "lunar_date": "农历正月初五",
+    "venue": "三门县横渡镇下山头自然村",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 589,
+    "date": "2026年4月22日",
+    "lunar_date": "农历三月初六",
+    "venue": "三门县亭旁镇韩家村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 590,
+    "date": "2026年4月24日",
+    "lunar_date": "农历三月初八",
+    "venue": "三门县健跳镇峋岩村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 591,
+    "date": "2026年2月5日",
+    "lunar_date": "农历十二月十八",
+    "venue": "天台县洪畴镇吉湖村",
+    "location_note": "",
+    "troupe": "临海市宏华越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 592,
+    "date": "",
+    "lunar_date": "",
+    "venue": "宁海县梅林街道梅林村",
+    "location_note": "",
+    "troupe": "温岭市越剧三团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 593,
+    "date": "",
+    "lunar_date": "",
+    "venue": "余姚市泗门镇明朗村柏树下",
+    "location_note": "",
+    "troupe": "周巷姚剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《三线姻缘》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《》正本《陆卖饼》"
+      }
+    ],
+    "days_info": "（演出第5天）"
+  },
+  {
+    "id": 594,
+    "date": "",
+    "lunar_date": "",
+    "venue": "宁波北仑白峰街道轮仰村",
+    "location_note": "",
+    "troupe": "宁波北仑大碶鸣凤越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 595,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（1月20日）上午:正本《梁祝》下午:正本《天道正义》奉化区溪口镇班溪村",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《花园会》正本《皇后易嫁》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《狸猫换太子》"
+      }
+    ],
+    "days_info": "（演出第3天）"
+  },
+  {
+    "id": 596,
+    "date": "",
+    "lunar_date": "",
+    "venue": "宁海县前童镇竹林村",
+    "location_note": "",
+    "troupe": "宁波弘艺越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《情勾》正本《吕布与貂蝉》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《红楼梦》"
+      }
+    ],
+    "days_info": "（演出第3天）"
+  },
+  {
+    "id": 597,
+    "date": "",
+    "lunar_date": "",
+    "venue": "象山县鹤浦镇五利村",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 598,
+    "date": "",
+    "lunar_date": "",
+    "venue": "象山县茅洋乡茅洋村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《送花楼会》正本《玉蜻蜓》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《清唱》正本《情探》"
+      }
+    ],
+    "days_info": "（演出第2天）"
+  },
+  {
+    "id": 599,
+    "date": "",
+    "lunar_date": "",
+    "venue": "宁海县岔路镇白岭根村",
+    "location_note": "",
+    "troupe": "临海市风采越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 600,
+    "date": "",
+    "lunar_date": "",
+    "venue": "慈溪市崇寿镇崇胜村",
+    "location_note": "",
+    "troupe": "慈溪市春蕾和百飞越剧团合作",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《十八相送》正本《金殿认子》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《泗洲城》正本《大闹开封府》"
+      }
+    ],
+    "days_info": "（演出第1天）"
+  },
+  {
+    "id": 601,
+    "date": "",
+    "lunar_date": "",
+    "venue": "宁海县越溪乡南庄村",
+    "location_note": "",
+    "troupe": "浙江九洲婺剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《》正本《》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《》正本《》"
+      }
+    ],
+    "days_info": "（演出第1天）"
+  },
+  {
+    "id": 602,
+    "date": "2026年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "宁海县长街镇双家村",
+    "location_note": "",
+    "troupe": "宁海蕾蕾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 603,
+    "date": "2026年1月23日",
+    "lunar_date": "农历十二月初五",
+    "venue": "宁海县越溪乡南庄村",
+    "location_note": "",
+    "troupe": "台州市椒江越剧艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 604,
+    "date": "2026年1月23日",
+    "lunar_date": "农历十二月初五",
+    "venue": "余姚市泗门镇大庙周村",
+    "location_note": "",
+    "troupe": "余姚市长灵越剧团",
+    "shows": [
+      {
+        "date": "1月23日",
+        "info": "下午:正本《绣球缘》晚上:正本《狸猫换太子》"
+      },
+      {
+        "date": "1月24日",
+        "info": "下午:正本《何文秀》晚上:正本《梁祝》"
+      },
+      {
+        "date": "1月25日",
+        "info": "下午:正本《花中君子》晚上:正本《天道正义》"
+      },
+      {
+        "date": "1月26日",
+        "info": "下午:正本《玉蜻蜓》晚上:正本《五女拜寿》"
+      },
+      {
+        "date": "1月27日",
+        "info": "下午:正本《白兔记》晚上:正本《金殿认子》"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 605,
+    "date": "2026年1月26日",
+    "lunar_date": "农历十二月初八",
+    "venue": "象山县大徐镇陈山村",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 606,
+    "date": "2026年1月28日",
+    "lunar_date": "农历十二月初十",
+    "venue": "宁海县长街镇文围村文化礼堂",
+    "location_note": "",
+    "troupe": "浙江红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 607,
+    "date": "2026年2月1日",
+    "lunar_date": "农历十二月十四",
+    "venue": "宁海县茶院镇下徐村",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 608,
+    "date": "2026年2月9日",
+    "lunar_date": "农历十二月廿二",
+    "venue": "宁海县胡陈沙地下",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 609,
+    "date": "2026年2月10日",
+    "lunar_date": "农历十二月廿三",
+    "venue": "宁海县深圳镇孔横山村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 610,
+    "date": "2026年2月14日",
+    "lunar_date": "农历十二月廿七",
+    "venue": "宁海县深圳清潭村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 611,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月17日＜农历正月初一>）余姚市陆埠镇袁马村",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 612,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月18日＜农历正月初二>）宁波市东钱湖镇韩岭村",
+    "location_note": "",
+    "troupe": "宁波市鄞州百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 613,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "象山县新桥镇板岭村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 614,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "宁波市海曙区桓村",
+    "location_note": "",
+    "troupe": "临海市红艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 615,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月20日＜农历正月初四>）象山县新桥镇东溪村",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 616,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月21日＜农历正月初五>）象山县涂茨镇大坦村",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 617,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月21日<农历正月初五＞）鄞州区塘溪镇观山村",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 618,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "象山县丹西街道何家村",
+    "location_note": "",
+    "troupe": "宁波三坑调腔剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 619,
+    "date": "2026年2月23日",
+    "lunar_date": "农历正月初七",
+    "venue": "象山县贤痒镇俞公岙",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 620,
+    "date": "2026年2月24日",
+    "lunar_date": "农历正月初八",
+    "venue": "象山县石浦镇东门渔村",
+    "location_note": "",
+    "troupe": "浙江群瑆越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 621,
+    "date": "2026年2月24日",
+    "lunar_date": "农历正月初八",
+    "venue": "象山县晓塘乡黄埠村",
+    "location_note": "",
+    "troupe": "临海市天海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 622,
+    "date": "2026年2月25日",
+    "lunar_date": "农历正月初九",
+    "venue": "慈溪市横河镇梅湖村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 623,
+    "date": "2026年2月26日",
+    "lunar_date": "农历正月初十",
+    "venue": "鄞州区咸祥镇外蔡村",
+    "location_note": "",
+    "troupe": "象山实验越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 624,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "宁海县长街镇山头村",
+    "location_note": "",
+    "troupe": "宁波市中誉越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 625,
+    "date": "2026年2月29日",
+    "lunar_date": "农历正月十三",
+    "venue": "象山县丹城姜毛庙",
+    "location_note": "",
+    "troupe": "象山实验越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 626,
+    "date": "2026年2月29日",
+    "lunar_date": "农历正月十三",
+    "venue": "宁波市塘溪镇邹溪庙",
+    "location_note": "",
+    "troupe": "嵊州市越剧艺术中心一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 627,
+    "date": "2026年2月29日",
+    "lunar_date": "农历正月十三",
+    "venue": "舟山市普陀区六横镇太平庙",
+    "location_note": "",
+    "troupe": "宁波市镇海长宏越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 628,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "宁波市鄞州区咸阳庙",
+    "location_note": "",
+    "troupe": "浙江众艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 629,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "奉化区松岙镇景祐庙",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 630,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "宁海县枕头村",
+    "location_note": "",
+    "troupe": "临海市天籁越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 631,
+    "date": "2026年3月5日",
+    "lunar_date": "农历正月十七",
+    "venue": "象山县墙头镇丁家村",
+    "location_note": "",
+    "troupe": "绍兴市越剧一团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 632,
+    "date": "2026年3月7日",
+    "lunar_date": "农历正月十九",
+    "venue": "宁海县跃龙街道港头村",
+    "location_note": "",
+    "troupe": "象山亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 633,
+    "date": "2026年3月7日",
+    "lunar_date": "农历正月十九",
+    "venue": "慈溪市宗汉镇二塘新村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 634,
+    "date": "2026年3月8日",
+    "lunar_date": "农历正月二十",
+    "venue": "鄞州区姜山镇朝阳董王村",
+    "location_note": "",
+    "troupe": "宁波银宏小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 635,
+    "date": "2026年3月12日",
+    "lunar_date": "农历正月廿四",
+    "venue": "象山县石浦镇盐厂平水庙",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 636,
+    "date": "2026年3月12日",
+    "lunar_date": "农历正月廿四",
+    "venue": "宁海县涨坑村",
+    "location_note": "",
+    "troupe": "新昌小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 637,
+    "date": "2026年3月13日",
+    "lunar_date": "农历正月廿五",
+    "venue": "宁波逸夫剧院",
+    "location_note": "",
+    "troupe": "杭州越剧院",
+    "shows": [
+      {
+        "date": "3月13日",
+        "info": "晚上19:15越剧《金殿拒婚》"
+      },
+      {
+        "date": "3月14日",
+        "info": "晚上19:15越剧《彩楼记》"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 638,
+    "date": "2026年3月15日",
+    "lunar_date": "农历正月廿七",
+    "venue": "象山县大徐镇杉木洋村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 639,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "宁海县跃龙街道檀树头村",
+    "location_note": "",
+    "troupe": "台州市黄岩桔乡越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 640,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "奉化莼湖镇章胡村",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 641,
+    "date": "2026年3月25日",
+    "lunar_date": "农历二月初七",
+    "venue": "象山县晓塘乡胡家峙村九龙江自然村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 642,
+    "date": "2026年3月26日",
+    "lunar_date": "农历二月初八",
+    "venue": "宁海县西店镇樟树村",
+    "location_note": "",
+    "troupe": "象山县小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 643,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "宁海县长街镇大湖村",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 644,
+    "date": "2026年4月7日",
+    "lunar_date": "农历二月二十",
+    "venue": "象山县庄穆境祠山庙",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 645,
+    "date": "2026年4月15日",
+    "lunar_date": "农历二月廿八",
+    "venue": "宁波市鄞州区姜山镇佽飞庙",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 646,
+    "date": "2026年4月21日",
+    "lunar_date": "农历三月初五",
+    "venue": "宁海县长街镇五岔村金雀庙",
+    "location_note": "",
+    "troupe": "宁海繁艺平调越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 647,
+    "date": "2026年4月23日",
+    "lunar_date": "农历三月初七",
+    "venue": "象山县石浦镇东门村",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 648,
+    "date": "2026年4月23日",
+    "lunar_date": "农历三月初七",
+    "venue": "宁海县西店镇石孔村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 649,
+    "date": "2026年4月28日",
+    "lunar_date": "农历三月十二",
+    "venue": "宁海县西店镇洞口庙",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 650,
+    "date": "2026年5月3日",
+    "lunar_date": "农历三月十七",
+    "venue": "宁波市鄞州区云龙荷花桥村",
+    "location_note": "",
+    "troupe": "台州市弘韵越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 651,
+    "date": "2026年5月8日",
+    "lunar_date": "农历三月廿二",
+    "venue": "宁海县越溪乡上林村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 652,
+    "date": "2026年5月11日",
+    "lunar_date": "农历三月廿五",
+    "venue": "象山县石浦镇兰家村",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 653,
+    "date": "2026年5月24日",
+    "lunar_date": "农历四月初八",
+    "venue": "宁海县西店镇董家村",
+    "location_note": "",
+    "troupe": "海宁市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 654,
+    "date": "2026年5月27日",
+    "lunar_date": "农历四月十一",
+    "venue": "舟山市普陀区六横镇太平庙",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 655,
+    "date": "2026年5月30日",
+    "lunar_date": "农历四月十四",
+    "venue": "宁波市北仑区大磎白石庙",
+    "location_note": "",
+    "troupe": "象山实验越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 656,
+    "date": "2026年6月2日",
+    "lunar_date": "农历四月十七",
+    "venue": "慈溪市长河镇沧田村",
+    "location_note": "",
+    "troupe": "台州阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 657,
+    "date": "2026年6月5日",
+    "lunar_date": "农历四月二十",
+    "venue": "象山县鹤浦镇大沙村",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 658,
+    "date": "2026年6月26日",
+    "lunar_date": "农历五月十二",
+    "venue": "象山县晓塘乡三眼溪",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 659,
+    "date": "2026年9月17日",
+    "lunar_date": "农历八月初七",
+    "venue": "宁海县深甽镇南溪村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 660,
+    "date": "2026年9月19日",
+    "lunar_date": "农历八月初九",
+    "venue": "象山县新桥镇灵岙村",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 661,
+    "date": "2026年9月27日",
+    "lunar_date": "农历八月十七",
+    "venue": "象山县石浦镇南汇村",
+    "location_note": "",
+    "troupe": "象山小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 662,
+    "date": "2026年9月27日",
+    "lunar_date": "农历八月十七",
+    "venue": "宁海县长街镇平原村石旭",
+    "location_note": "",
+    "troupe": "象山县亚红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 663,
+    "date": "2026年10月2日",
+    "lunar_date": "农历八月廿二",
+    "venue": "象山县石浦镇蒋家湾村",
+    "location_note": "",
+    "troupe": "三门县繁红越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 664,
+    "date": "2026年10月20日",
+    "lunar_date": "农历九月十一",
+    "venue": "宁波市云龙荷花桥杜村赵君庙",
+    "location_note": "",
+    "troupe": "象山万花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 665,
+    "date": "2026年2月14日",
+    "lunar_date": "农历十二月廿七",
+    "venue": "新昌县里遁山坎下田村",
+    "location_note": "",
+    "troupe": "台州市中樾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 666,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "诸暨市次坞镇古竹院村",
+    "location_note": "",
+    "troupe": "浙江奉化红楼越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 667,
+    "date": "2026年2月20日",
+    "lunar_date": "农历正月初四",
+    "venue": "诸暨市姚江镇山汀村",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 668,
+    "date": "2026年2月21日",
+    "lunar_date": "农历正月初五",
+    "venue": "诸暨市店口镇兰岭村",
+    "location_note": "",
+    "troupe": "富阳越剧艺术传习院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 669,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "上虞市永和镇青峰村",
+    "location_note": "",
+    "troupe": "宁海蕾蕾越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 670,
+    "date": "2026年2月24日",
+    "lunar_date": "农历正月初八",
+    "venue": "诸暨市店口镇绿源村",
+    "location_note": "",
+    "troupe": "宁波三坑调腔剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 671,
+    "date": "2026年2月26日",
+    "lunar_date": "农历正月初十",
+    "venue": "诸暨市山下湖镇广山村",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 672,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "诸暨市朝五相村推广组委会",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 673,
+    "date": "2026年3月1日",
+    "lunar_date": "农历正月十三",
+    "venue": "新昌县沃洲镇龙皇堂村",
+    "location_note": "",
+    "troupe": "浙江艺海小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 674,
+    "date": "2026年3月4日",
+    "lunar_date": "农历正月十六",
+    "venue": "诸暨市店口镇湄池湖西村",
+    "location_note": "",
+    "troupe": "台州市椒江越艺越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 675,
+    "date": "2026年3月7日",
+    "lunar_date": "农历正月十九",
+    "venue": "诸暨市店口镇中里村",
+    "location_note": "",
+    "troupe": "江西小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 676,
+    "date": "2026年3月10日",
+    "lunar_date": "农历正月廿二",
+    "venue": "诸暨市暨阳街道毛家圳村",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 677,
+    "date": "",
+    "lunar_date": "",
+    "venue": "诸暨市枫桥镇先进村",
+    "location_note": "",
+    "troupe": "富阳越剧艺术传习院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 678,
+    "date": "2026年3月11日",
+    "lunar_date": "农历正月廿三",
+    "venue": "诸暨市牌头镇九霞村",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 679,
+    "date": "2026年3月13日",
+    "lunar_date": "农历正月廿五",
+    "venue": "诸暨市店口镇金岭村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 680,
+    "date": "2026年3月20日",
+    "lunar_date": "农历二月初二",
+    "venue": "诸暨市次坞镇吕家村",
+    "location_note": "",
+    "troupe": "温州小百花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 681,
+    "date": "2026年4月4日",
+    "lunar_date": "农历二月十七",
+    "venue": "诸暨市大唐街道中兴社区",
+    "location_note": "",
+    "troupe": "诸暨市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 682,
+    "date": "2026年4月8日",
+    "lunar_date": "农历二月廿一",
+    "venue": "诸暨市市桃江镇赵源村",
+    "location_note": "",
+    "troupe": "台州市阿小越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 683,
+    "date": "2026年2月19日",
+    "lunar_date": "农历正月初三",
+    "venue": "富阳区灵桥镇陈村村",
+    "location_note": "",
+    "troupe": "宁波百飞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 684,
+    "date": "2026年2月21日",
+    "lunar_date": "农历正月初五",
+    "venue": "桐庐县江南镇金荗村枝荿自然村",
+    "location_note": "",
+    "troupe": "桐庐县越剧传习中心",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 685,
+    "date": "2026年2月22日",
+    "lunar_date": "农历正月初六",
+    "venue": "富阳区富春街道三联村",
+    "location_note": "",
+    "troupe": "宁波百飞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 686,
+    "date": "2026年2月25日",
+    "lunar_date": "农历正月初九",
+    "venue": "富阳青山村",
+    "location_note": "",
+    "troupe": "富阳越剧艺术传习院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 687,
+    "date": "2026年2月28日",
+    "lunar_date": "农历正月十二",
+    "venue": "富阳区富春街道三桥村",
+    "location_note": "",
+    "troupe": "宁波百飞越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 688,
+    "date": "",
+    "lunar_date": "",
+    "venue": "富阳新生村",
+    "location_note": "",
+    "troupe": "富阳越剧艺术传习院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 689,
+    "date": "2026年4月24日",
+    "lunar_date": "农历三月初八",
+    "venue": "杭州胜利剧院",
+    "location_note": "",
+    "troupe": "富阳越剧艺术传习院",
+    "shows": [
+      {
+        "date": "4月24日",
+        "info": "晚上：正本《红楼梦》"
+      },
+      {
+        "date": "4月25日",
+        "info": "晚上：正本《白兔记》"
+      }
+    ],
+    "days_info": ""
+  },
+  {
+    "id": 690,
+    "date": "",
+    "lunar_date": "",
+    "venue": "缙云县前路乡西散村",
+    "location_note": "",
+    "troupe": "台州市椒江越剧艺越剧团",
+    "shows": [
+      {
+        "time": "下午",
+        "info": "加演《情勾》正本《胭脂》"
+      },
+      {
+        "time": "晚上",
+        "info": "加演《歌舞》正本《新巡按斩父》"
+      }
+    ],
+    "days_info": "（演出第4天）"
+  },
+  {
+    "id": 691,
+    "date": "2025年1月20日",
+    "lunar_date": "农历十二月初二",
+    "venue": "东阳市横店镇城头村",
+    "location_note": "",
+    "troupe": "浙江思火婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 692,
+    "date": "2026年1月23日",
+    "lunar_date": "农历十二月初五",
+    "venue": "东阳市横店城头村",
+    "location_note": "",
+    "troupe": "台州市中逸越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 693,
+    "date": "2026年1月23日",
+    "lunar_date": "农历十二月初五",
+    "venue": "金华市磐安县新渥街道",
+    "location_note": "",
+    "troupe": "浙江思火婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 694,
+    "date": "2025年2月4日",
+    "lunar_date": "农历十二月十七日",
+    "venue": "缙云县舒洪镇清井湾村",
+    "location_note": "",
+    "troupe": "浙江思火婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 695,
+    "date": "2026年2月7日",
+    "lunar_date": "农历是十二月二十",
+    "venue": "永康市阳龙村",
+    "location_note": "",
+    "troupe": "浙江思火婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 696,
+    "date": "",
+    "lunar_date": "",
+    "venue": "（2026年2月11日<农历腊月廿四>丽水市缙云县白峰湖村",
+    "location_note": "",
+    "troupe": "浙江思火婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 697,
+    "date": "2026年2月17日",
+    "lunar_date": "农历正月初一",
+    "venue": "缙云县三溪乡三溪村",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 698,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "金华市金东去孝顺镇鞋塘潘村",
+    "location_note": "",
+    "troupe": "浙江思火婺剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 699,
+    "date": "2026年2月9日",
+    "lunar_date": "农历十二月廿二",
+    "venue": "江西省鄱阳县昌洲乡马湖村",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏艺术团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 700,
+    "date": "2026年2月21日",
+    "lunar_date": "农历正月初五",
+    "venue": "福建省福安市下白石镇顶头村",
+    "location_note": "",
+    "troupe": "台州市越海越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 701,
+    "date": "2026年2月24日",
+    "lunar_date": "农历正月初八",
+    "venue": "福建省福安市甘棠镇倪下村倪氏宗祠",
+    "location_note": "",
+    "troupe": "临海市桔香越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 702,
+    "date": "2026年2月25日",
+    "lunar_date": "农历正月初九",
+    "venue": "福建省福安市柄溪镇溪南村文化礼堂",
+    "location_note": "",
+    "troupe": "安徽百花黄梅戏艺术团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 703,
+    "date": "2026年2月26日",
+    "lunar_date": "农历正月初十",
+    "venue": "福建省福安市下白石镇福山村",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 704,
+    "date": "2026年2月27日",
+    "lunar_date": "农历正月十一",
+    "venue": "福建省福州市罗源县起步镇兰田村林欧厝里",
+    "location_note": "",
+    "troupe": "上海小梅花越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 705,
+    "date": "2026年3月2日",
+    "lunar_date": "农历正月十四",
+    "venue": "福建省福安市县环村",
+    "location_note": "",
+    "troupe": "温州市越剧院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 706,
+    "date": "2026年3月4日",
+    "lunar_date": "农历正月十六",
+    "venue": "南京市高淳区芦溪小庙龙王庙会",
+    "location_note": "",
+    "troupe": "海宁市越剧团",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 707,
+    "date": "2026年3月5日",
+    "lunar_date": "农历正月十七",
+    "venue": "南京市高淳区阳江镇平干圩六村",
+    "location_note": "",
+    "troupe": "富阳越剧艺术传习院",
+    "shows": [],
+    "days_info": ""
+  },
+  {
+    "id": 708,
+    "date": "2026年3月6日",
+    "lunar_date": "农历正月十八",
+    "venue": "福建省宁德市霞浦县柏洋乡横江村",
+    "location_note": "",
+    "troupe": "浙江艺鸿越剧团",
+    "shows": [],
+    "days_info": ""
+  }
+]
