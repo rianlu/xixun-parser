@@ -158,10 +158,13 @@ function createRow(item) {
     if (item.shows && item.shows.length > 0) {
         // 将所有场次组合在一起
         content = item.shows.map(s => {
-            const time = s.time || '';
+            const prefix = s.date || s.time || '';
             const info = s.info || '';
-            return time ? `${time} ${info}` : info;
+            return prefix ? `${prefix} ${info}` : info;
         }).join('<br>');
+    } else if (item.content) {
+        // Fallback if item.content already exists (from backend sync preference)
+        content = item.content.replace(/\n/g, '<br>');
     } else {
         content = item.location_note ? `定位:${item.location_note}` : (item.days_info || '');
     }
@@ -222,11 +225,11 @@ function copyToClipboard() {
 
         let content = '';
         if (item.shows && item.shows.length > 0) {
-            // 复制时使用 " | " 分隔不同场次
+            // 复制时使用 " | " 分隔不同场次 (避免换行破坏TSV格式)
             content = item.shows.map(s => {
-                const time = s.time || '';
+                const prefix = s.date || s.time || '';
                 const info = s.info || '';
-                return time ? `${time} ${info}` : info;
+                return prefix ? `${prefix} ${info}` : info;
             }).join(' | ');
         } else {
             content = item.location_note ? `定位:${item.location_note}` : (item.days_info || '');
@@ -317,4 +320,181 @@ function filterData() {
         return true;
     });
     console.log('Filtered data count:', filteredData.length);
+}
+
+// --- Sync Functions ---
+let currentSyncActions = [];
+
+function previewSync() {
+    if (!filteredData || filteredData.length === 0) {
+        alert("没有数据可同步，请先解析文章。");
+        return;
+    }
+
+    const btn = document.querySelector('.action-btn.sync-btn') || document.querySelector('button[onclick="previewSync()"]');
+    if (btn) {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '正在计算...';
+        btn.disabled = true;
+    }
+
+    fetch(`${API_BASE_URL}/sync/preview`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ data: filteredData })
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                currentSyncActions = data.actions;
+
+                // 🔍 调试: 打印读取到的数据到控制台
+                console.log('=== 同步预览数据 ===');
+                console.log('远程记录数:', data.remote_count);
+                console.log('操作列表:', data.actions);
+                console.log('详细操作:');
+                data.actions.forEach((action, index) => {
+                    console.log(`[${index + 1}] ${action.type}:`, {
+                        剧团: action.troupe,
+                        地址: action.venue,
+                        开始日期: action.date,
+                        结束日期: action.end_date,
+                        内容: action.content
+                    });
+                });
+                console.log('==================');
+
+                // Show Remote Count Info
+                const countInfo = document.getElementById('syncRemoteInfo');
+                if (countInfo) {
+                    countInfo.innerHTML = `已连接飞书。远程表格现有数据: <strong>${data.remote_count}</strong> 条。`;
+                    if (data.remote_count === 0) {
+                        countInfo.innerHTML += ` <span style="color:red; font-weight:bold;">(⚠️ 注意: 远程表格为空! 请检查 TableID 是否正确)</span>`;
+                    }
+                }
+
+                renderSyncPreview(data.actions);
+                document.getElementById('syncModal').style.display = 'block';
+            } else {
+                alert('获取同步预览失败: ' + (data.error || '未知错误'));
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('请求失败，请检查网络或后端服务');
+        })
+        .finally(() => {
+            if (btn) {
+                btn.innerHTML = '<span>🔄</span> 同步到飞书';
+                btn.disabled = false;
+            }
+        });
+}
+
+function renderSyncPreview(actions) {
+    const tbody = document.querySelector('#syncPreviewTable tbody');
+    tbody.innerHTML = '';
+
+    if (actions.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">数据已是最新，无需同步。</td></tr>';
+        return;
+    }
+
+    actions.forEach(action => {
+        if (action.type === 'SKIP') return;
+
+        const tr = document.createElement('tr');
+        let color = '#333';
+        let label = action.type;
+        let bgColor = '';
+
+        let troupeDisplay = action.troupe || '-';
+        let venueDisplay = action.venue || '-';
+
+        if (action.type === 'CREATE') {
+            color = 'green'; label = '新增'; bgColor = '#e6fffa';
+        }
+        else if (action.type === 'UPDATE') {
+            color = 'orange'; label = '更新'; bgColor = '#fffaf0';
+            // Show comparison if available
+            if (action.old_troupe && action.old_troupe !== action.troupe) {
+                troupeDisplay = `<span style="text-decoration:line-through; color:#aaa;">${action.old_troupe}</span><br><span style="color:orange;">${action.troupe}</span>`;
+            }
+            if (action.old_venue && action.old_venue !== action.venue) {
+                venueDisplay = `<span style="text-decoration:line-through; color:#aaa;">${action.old_venue}</span><br><span style="color:orange;">${action.venue}</span>`;
+            }
+        }
+        else if (action.type === 'DELETE') {
+            // 全量替换策略: 删除所有旧的 System 数据
+            color = 'red'; label = '删除'; bgColor = '#fff5f5';
+        }
+
+        tr.style.backgroundColor = bgColor;
+
+        // Format content for display (replace newlines with <br>)
+        const contentDisplay = (action.content || '').replace(/\n/g, '<br>');
+
+        tr.innerHTML = `
+            <td style="color: ${color}; font-weight: bold;">${label}</td>
+            <td>${troupeDisplay}</td>
+            <td>${venueDisplay}</td>
+            <td>${action.date || '-'}</td>
+            <td>${action.end_date || '-'}</td>
+            <td style="font-size: 13px; color: #555; white-space: nowrap;">${contentDisplay}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    if (tbody.children.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">没有变更 (所有数据已存在且被保护)</td></tr>';
+    }
+}
+
+function closeSyncModal() {
+    document.getElementById('syncModal').style.display = 'none';
+}
+
+function confirmSync() {
+    if (!currentSyncActions || currentSyncActions.length === 0) return;
+
+    const btn = document.querySelector('#syncModal button[onclick="confirmSync()"]');
+    const originalText = btn.innerText;
+    btn.innerText = '同步中...';
+    btn.disabled = true;
+
+    fetch(`${API_BASE_URL}/sync/execute`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ actions: currentSyncActions })
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const stats = data.stats;
+                alert(`同步完成!\n新增: ${stats.create}\n更新: ${stats.update}\n删除: ${stats.delete}\n跳过: ${stats.skip}\n错误: ${stats.error}`);
+                closeSyncModal();
+            } else {
+                alert('同步执行失败: ' + data.error);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('请求失败');
+        })
+        .finally(() => {
+            btn.innerText = originalText;
+            btn.disabled = false;
+        });
+}
+
+// Close modal when clicking outside
+window.onclick = function (event) {
+    const modal = document.getElementById('syncModal');
+    if (event.target == modal) {
+        closeSyncModal();
+    }
 }

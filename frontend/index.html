@@ -116,6 +116,10 @@
                 <button class="action-btn" onclick="copyToClipboard()" style="background-color: #2da44e; color: white;">
                     <span>📋</span> 复制为表格格式 (用于飞书)
                 </button>
+                <button class="action-btn" onclick="previewSync()"
+                    style="background-color: #3370ff; color: white; margin-left: 10px;">
+                    <span>🔄</span> 同步到飞书
+                </button>
             </div>
 
             <!-- 数据表格 -->
@@ -141,6 +145,45 @@
         <footer class="footer">
             <p>© 2026 戏讯解析助手 | 让戏曲信息触手可及</p>
         </footer>
+    </div>
+
+    <!-- Sync Preview Modal -->
+    <div id="syncModal" class="modal"
+        style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+        <div class="modal-content"
+            style="background-color: #fefefe; margin: 5% auto; padding: 20px; border: 1px solid #888; width: 95%; max-width: 1200px; border-radius: 8px; position: relative;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="margin: 0;">同步预览</h2>
+                <span onclick="closeSyncModal()"
+                    style="color: #aaa; font-size: 28px; font-weight: bold; cursor: pointer; line-height: 1;">&times;</span>
+            </div>
+
+            <div id="syncRemoteInfo"
+                style="margin-bottom: 10px; padding: 10px; background-color: #f8f9fa; border-radius: 4px; font-size: 14px;">
+            </div>
+
+            <div style="max-height: 500px; overflow-y: auto; margin-bottom: 20px; border: 1px solid #eee;">
+                <table id="syncPreviewTable" class="data-table" style="width: 100%; margin: 0;">
+                    <thead style="position: sticky; top: 0; background: #fff; z-index: 1;">
+                        <tr>
+                            <th style="width: 60px;">操作</th>
+                            <th style="width: 150px;">剧团</th>
+                            <th style="width: 150px;">地址</th>
+                            <th style="width: 100px;">开始日期</th>
+                            <th style="width: 100px;">结束日期</th>
+                            <th>内容详情</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px;">
+                <button onclick="closeSyncModal()" class="action-btn"
+                    style="background-color: #f0f0f0; color: #333; border: 1px solid #ccc;">取消</button>
+                <button onclick="confirmSync()" class="action-btn"
+                    style="background-color: #3370ff; color: white;">确认同步</button>
+            </div>
+        </div>
     </div>
 
 

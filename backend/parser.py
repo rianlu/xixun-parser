@@ -195,10 +195,6 @@ class WeChatArticleParser:
             if troupe_match:
                 troupe_name = troupe_match.group(1)
                 venue_part = line[:troupe_match.start()].strip()
-                
-                if "青湾村" in line or "（2026年2月26日<农历正月初十>）" in line:
-                    print(f"DEBUG: Processing line {i}: {line}")
-                    print(f"DEBUG: Venue part: '{venue_part}'")
 
                 if not venue_part and i > 0:
                     venue_part = self._backtrack_venue(lines, i - 1)
@@ -207,29 +203,33 @@ class WeChatArticleParser:
                 # Format: （2026年1月20日<农历...>）Place...
                 item_date, item_lunar, clean_venue = self._parse_inline_date(venue_part)
                 
-                # 如果本行没有提取到日期，且上一行有日期信息，说明可能是换行导致的
-                # e.g. Prev: (Date) 苍南县
-                #      Curr: 灵溪镇...【Troupe】
+                # 如果本行没有提取到日期，检查上一行
+                # 但要确保上一行不是另一条记录（不包含【】）
                 if not item_date and i > 0:
-                     prev_line = lines[i-1]
-                     prev_date, prev_lunar, prev_venue = self._parse_inline_date(prev_line)
-                     if prev_date:
-                         item_date = prev_date
-                         item_lunar = prev_lunar
-                         # 合并地址: 上一行的有效地址部分 + 本行的地址部分
-                         # 注意: clean_venue 是本行去除日期后的部分(本来就没日期所以就是venue_part)
-                         venue_part = prev_venue + clean_venue
-                         clean_venue = venue_part
+                    prev_line = lines[i-1]
+                    # 只有当上一行不包含剧团标记时才回溯
+                    if '【' not in prev_line and '】' not in prev_line:
+                        prev_date, prev_lunar, prev_venue = self._parse_inline_date(prev_line)
+                        if prev_date:
+                            item_date = prev_date
+                            item_lunar = prev_lunar
+                            # 如果本行的venue_part为空，说明地址也在上一行
+                            if not venue_part or not venue_part.strip():
+                                clean_venue = prev_venue
+                            else:
+                                # 合并地址: 上一行的有效地址部分 + 本行的地址部分
+                                clean_venue = prev_venue + clean_venue
 
                 final_venue = clean_venue
                 final_date = item_date if item_date else current_date_info['date']
                 final_lunar = item_lunar if item_lunar else current_date_info['lunar']
                 
                 # 提取定位备注
-                loc_note_match = re.search(r'（定位([^）]+)）', final_venue)
+                # 提取定位备注 (User request: Don't extract as separate content, just keep in venue)
+                # loc_note_match = re.search(r'（定位([^）]+)）', final_venue)
                 loc_note = ""
-                if loc_note_match:
-                    loc_note = loc_note_match.group(1)
+                # if loc_note_match:
+                #    loc_note = loc_note_match.group(1)
                     # 用户要求保留定位在地址中，不再移除
                     # final_venue = final_venue.replace(loc_note_match.group(0), '').strip()
 
@@ -353,18 +353,24 @@ class WeChatArticleParser:
         return "".join(parts)
 
     def _parse_inline_date(self, text):
-        """解析行内日期: （2026年1月20日<农历...>) Venue
-           兼容缺失起始括号的情况: 2026年1月20日<农历...>)
+        """解析行内日期: 支持多种格式变体
+           - （2026年1月20日<农历...>）
+           - 2026年1月20日<农历...>）（缺少开头括号）
+           - （2026年1月20日＜农历...＞）（全角尖括号）
+           - （2026年1月20日<农历...>（缺少结尾括号）
         """
-        # Regex for （?YYYY年M月D日<农历...>）
-        # Make the opening parenthesis optional
-        match = re.search(r'（?(\d{4}年\d{1,2}月\d{1,2}日)<([^>]+)>）', text)
+        # 统一的日期模式，支持所有变体
+        # （?表示开头括号可选，[<＜]表示半角或全角左尖括号，）?表示结尾括号可选
+        pattern = r'（?(\d{4}年\d{1,2}月\d{1,2}日)[<＜]([^>＞]+)[>＞]）?'
+        
+        match = re.search(pattern, text)
         if match:
             date = match.group(1)
             lunar = match.group(2)
-            # Remove the date part from text to get clean venue
-            clean_text = text.replace(match.group(0), '').strip()
+            # 使用re.sub移除所有匹配的日期模式（包括所有变体）
+            clean_text = re.sub(pattern, '', text).strip()
             return date, lunar, clean_text
+        
         return None, None, text
 
     def _parse_show_line(self, line):

@@ -24,6 +24,16 @@ if [ ! -f "venv/.installed" ]; then
     touch venv/.installed
 fi
 
+# 检查端口占用并清理
+PORT=5001
+PID=$(lsof -ti:$PORT)
+if [ ! -z "$PID" ]; then
+    echo "发现端口 $PORT 被占用 (PID: $PID)，正在清理..."
+    kill -9 $PID
+    sleep 1
+    echo "端口已释放"
+fi
+
 # 启动服务
 echo ""
 echo "启动后端服务..."

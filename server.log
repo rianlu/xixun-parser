@@ -1,0 +1,42 @@
+================================
+  戏讯解析助手
+================================
+
+激活虚拟环境...
+发现端口 5001 被占用 (PID: 76845
+77052)，正在清理...
+端口已释放
+
+启动后端服务...
+访问地址: http://localhost:5000
+
+按 Ctrl+C 停止服务
+================================
+
+============================================================
+戏讯解析助手后端服务
+============================================================
+服务地址: http://localhost:5001
+API文档:
+  POST /api/parse   - 解析文章
+  POST /api/export  - 导出数据
+  POST /api/sync/preview - 预览同步计划
+  POST /api/sync/execute - 执行同步计划
+  GET  /api/health  - 健康检查
+============================================================
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.18.0.1:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 182-459-942
+./start.sh: line 46: 80532 Killed: 9               python app.py
+/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-u7nysy72'}
+  warnings.warn(
+/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-y03phtdu'}
+  warnings.warn(

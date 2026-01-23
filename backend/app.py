@@ -123,6 +123,55 @@ def export_data():
         }), 500
 
 
+@app.route('/api/sync/preview', methods=['POST'])
+def sync_preview():
+    """
+    预览同步计划
+    请求体: { "data": [...] }
+    """
+    try:
+        from sync_to_feishu import FeishuSync
+        
+        req_data = request.get_json()
+        local_data = req_data.get('data', [])
+        
+        syncer = FeishuSync()
+        result = syncer.calculate_sync_plan(local_data)
+        
+        return jsonify({
+            'success': True,
+            'actions': result["actions"],
+            'remote_count': result["remote_count"]
+        })
+    except Exception as e:
+        print(f"Sync Preview Error: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/api/sync/execute', methods=['POST'])
+def sync_execute():
+    """
+    执行同步计划
+    请求体: { "actions": [...] }
+    """
+    try:
+        from sync_to_feishu import FeishuSync
+        
+        req_data = request.get_json()
+        actions = req_data.get('actions', [])
+        
+        syncer = FeishuSync()
+        stats = syncer.execute_sync_plan(actions)
+        
+        return jsonify({
+            'success': True,
+            'stats': stats
+        })
+    except Exception as e:
+        print(f"Sync Execute Error: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+
 @app.route('/api/health', methods=['GET'])
 def health_check():
     """健康检查"""
@@ -141,6 +190,8 @@ if __name__ == '__main__':
     print("API文档:")
     print("  POST /api/parse   - 解析文章")
     print("  POST /api/export  - 导出数据")
+    print("  POST /api/sync/preview - 预览同步计划")
+    print("  POST /api/sync/execute - 执行同步计划")
     print("  GET  /api/health  - 健康检查")
     print("=" * 60)
     print()
