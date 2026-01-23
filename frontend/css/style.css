@@ -571,3 +571,90 @@ body {
         justify-content: center;
     }
 }
+
+/* 数据表格样式 */
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+    background-color: var(--bg-light);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    position: sticky;
+    top: 0;
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--bg-light);
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.troupe-cell {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.date-cell {
+    color: var(--text-primary);
+}
+
+.lunar-cell {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+/* 地区筛选 */
+.region-filter {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e1e4e8;
+}
+
+.filter-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #24292e;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #444;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 4px;
+    cursor: pointer;
+}

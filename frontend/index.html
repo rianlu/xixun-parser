@@ -71,24 +71,25 @@
             <div class="action-bar">
                 <div class="filter-section">
                     <!-- 地区筛选 -->
-                    <div class="location-filter">
-                        <label class="filter-label">
-                            <span class="filter-icon">📍</span>
-                            地区筛选
-                        </label>
-                        <div class="filter-controls">
-                            <select id="citySelect" class="city-select">
-                                <option value="">全部市/县</option>
-                            </select>
-                            <div id="districtFilter" class="district-filter hidden">
-                                <div class="district-header">
-                                    <span>选择区域:</span>
-                                    <button class="clear-btn" onclick="clearDistricts()">清除</button>
-                                </div>
-                                <div id="districtCheckboxes" class="district-checkboxes"></div>
-                            </div>
+                    <div class="region-filter">
+                        <label class="filter-label">地区筛选:</label>
+                        <div class="checkbox-group" id="regionCheckboxes">
+                            <label><input type="checkbox" value="龙港" checked> 龙港</label>
+                            <label><input type="checkbox" value="平阳" checked> 平阳</label>
+                            <label><input type="checkbox" value="苍南" checked> 苍南</label>
+                            <label><input type="checkbox" value="鹿城"> 鹿城</label>
+                            <label><input type="checkbox" value="龙湾"> 龙湾</label>
+                            <label><input type="checkbox" value="瓯海"> 瓯海</label>
+                            <label><input type="checkbox" value="洞头"> 洞头</label>
+                            <label><input type="checkbox" value="瑞安"> 瑞安</label>
+                            <label><input type="checkbox" value="乐清"> 乐清</label>
+                            <label><input type="checkbox" value="永嘉"> 永嘉</label>
+                            <label><input type="checkbox" value="文成"> 文成</label>
+                            <label><input type="checkbox" value="泰顺"> 泰顺</label>
+                            <label><input type="checkbox" value="玉环"> 玉环</label>
                         </div>
                     </div>
+
 
                     <!-- 搜索框 -->
                     <div class="search-box">
@@ -110,9 +111,29 @@
                 </div>
             </div>
 
-            <!-- 数据列表 -->
-            <div class="data-list" id="dataList">
-                <!-- 数据项将通过JavaScript动态生成 -->
+            <!-- 工具栏 -->
+            <div class="toolbar" style="margin-bottom: 10px; display: flex; justify-content: flex-end;">
+                <button class="action-btn" onclick="copyToClipboard()" style="background-color: #2da44e; color: white;">
+                    <span>📋</span> 复制为表格格式 (用于飞书)
+                </button>
+            </div>
+
+            <!-- 数据表格 -->
+            <div class="table-container">
+                <table id="dataTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>剧团或词师名称</th>
+                            <th>地址</th>
+                            <th>开始日期</th>
+                            <th>结束日期</th>
+                            <th>内容详情</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- 数据行将动态生成 -->
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -122,7 +143,7 @@
         </footer>
     </div>
 
-    <script src="js/location-filter.js"></script>
+
     <script src="js/app.js"></script>
 </body>
 

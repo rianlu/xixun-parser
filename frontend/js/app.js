@@ -6,9 +6,6 @@ const API_BASE_URL = 'http://localhost:5001/api';
 // 全局状态
 let currentData = [];
 let filteredData = [];
-let locationHierarchy = {}; // 地区层级数据
-let selectedCity = '';
-let selectedDistricts = new Set();
 
 // DOM元素
 const urlInput = document.getElementById('urlInput');
@@ -20,10 +17,7 @@ const resultSection = document.getElementById('resultSection');
 const articleTitle = document.getElementById('articleTitle');
 const dataCount = document.getElementById('dataCount');
 const searchInput = document.getElementById('searchInput');
-const dataList = document.getElementById('dataList');
-const citySelect = document.getElementById('citySelect');
-const districtFilter = document.getElementById('districtFilter');
-const districtCheckboxes = document.getElementById('districtCheckboxes');
+const tableBody = document.getElementById('tableBody');
 
 // 初始化
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,8 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             handleParse();
         }
     });
-    searchInput.addEventListener('input', handleSearch);
-    citySelect.addEventListener('change', handleCityChange);
+    // searchInput.addEventListener('input', handleSearch);
 
     // 测试API连接
     checkAPIHealth();
@@ -85,7 +78,12 @@ async function handleParse() {
             // 解析成功
             currentData = result.data.performances || [];
             filteredData = [...currentData];
+            // 初始筛选
+            filterData();
             displayResults(result.data);
+
+            // 添加筛选监听器
+            setupFilterListeners();
         } else {
             // 解析失败
             showError(result.error || '解析失败,请重试');
@@ -124,114 +122,59 @@ function displayResults(data) {
 
     // 更新统计信息
     articleTitle.textContent = data.title || '未知标题';
-    dataCount.textContent = data.total || 0;
+    dataCount.textContent = filteredData.length || 0;
 
-    // 提取地区层级
-    locationHierarchy = extractLocationHierarchy(data.performances);
-
-    // 填充城市下拉框
-    populateCitySelect(locationHierarchy);
-
-    // 渲染数据列表
-    renderDataList(filteredData);
+    // 渲染数据表格
+    renderTable(filteredData);
 }
 
-// 渲染数据列表
-function renderDataList(data) {
+// 渲染数据表格
+function renderTable(data) {
     if (!data || data.length === 0) {
-        dataList.innerHTML = `
-            <div class="data-item">
-                <p style="text-align: center; color: var(--text-secondary);">
+        tableBody.innerHTML = `
+            <tr>
+                <td colspan="5" style="text-align: center; color: var(--text-secondary); padding: 30px;">
                     暂无数据
-                </p>
-            </div>
+                </td>
+            </tr>
         `;
         return;
     }
 
-    dataList.innerHTML = data.map((item, index) => {
-        // 构建标题
-        let title = `${item.troupe || '未知剧团'}`;
-
-        // 构建日期信息
-        let dateInfo = '';
-        if (item.date) {
-            dateInfo = `<div style="color: var(--primary-color); font-size: 0.9rem; margin-bottom: 5px;">
-                📅 ${item.date} ${item.lunar_date ? `(${item.lunar_date})` : ''}
-            </div>`;
-        }
-
-        // 构建地点信息
-        let venueInfo = '';
-        if (item.venue) {
-            venueInfo = `<div style="margin-bottom: 5px;">
-                📍 ${item.venue}
-                ${item.location_note ? `<span style="color: var(--text-secondary); font-size: 0.85rem;">(定位: ${item.location_note})</span>` : ''}
-            </div>`;
-        }
-
-        // 构建剧目信息
-        let showsInfo = '';
-        if (item.shows && item.shows.length > 0) {
-            showsInfo = '<div style="margin-top: 10px; padding-left: 10px; border-left: 3px solid var(--primary-color);">';
-            item.shows.forEach(show => {
-                if (show.date) {
-                    // 多日演出格式
-                    showsInfo += `<div style="margin-bottom: 5px;">
-                        <strong>${show.date}</strong>: ${show.info}
-                    </div>`;
-                } else {
-                    // 当天演出格式
-                    showsInfo += `<div style="margin-bottom: 5px;">
-                        <strong>${show.time}</strong>: ${show.info}
-                    </div>`;
-                }
-            });
-            showsInfo += '</div>';
-        }
-
-        // 演出天数信息
-        let daysInfo = '';
-        if (item.days_info) {
-            daysInfo = `<div style="margin-top: 8px; color: var(--text-secondary); font-size: 0.85rem;">
-                ${item.days_info}
-            </div>`;
-        }
-
-        return `
-            <div class="data-item" style="animation-delay: ${index * 0.05}s">
-                <div class="data-item-header">
-                    <div class="data-item-title">
-                        🎭 ${title}
-                    </div>
-                    <div class="data-item-id">#${item.id}</div>
-                </div>
-                <div class="data-item-content">
-                    ${dateInfo}
-                    ${venueInfo}
-                    ${showsInfo}
-                    ${daysInfo}
-                </div>
-            </div>
-        `;
-    }).join('');
+    const rows = data.map(item => createRow(item));
+    tableBody.innerHTML = rows.join('');
 }
 
-// 格式化数据项内容
-function formatItemContent(item) {
-    const fields = [];
+function createRow(item) {
+    // 使用后端计算的 start_date 和 end_date
+    const startDate = item.start_date || item.date || '';
+    const endDate = item.end_date || item.date || '';
+    const troupe = item.troupe || '';
+    const address = item.venue || '';
+    // 总天数（totalDays）不显示
 
-    if (item.time) fields.push(`⏰ 时间: ${item.time}`);
-    if (item.venue) fields.push(`📍 地点: ${item.venue}`);
-    if (item.type) fields.push(`🎭 类型: ${item.type}`);
-    if (item.actors) fields.push(`👥 演员: ${item.actors}`);
-    if (item.price) fields.push(`💰 票价: ${item.price}`);
-
-    if (fields.length === 0 && item.raw_text) {
-        return `<p>${item.raw_text}</p>`;
+    // 合并内容详情
+    let content = '';
+    if (item.shows && item.shows.length > 0) {
+        // 将所有场次组合在一起
+        content = item.shows.map(s => {
+            const time = s.time || '';
+            const info = s.info || '';
+            return time ? `${time} ${info}` : info;
+        }).join('<br>');
+    } else {
+        content = item.location_note ? `定位:${item.location_note}` : (item.days_info || '');
     }
 
-    return fields.join(' | ') || '暂无详细信息';
+    return `
+        <tr>
+            <td class="troupe-cell">${troupe}</td>
+            <td>${address}</td>
+            <td class="date-cell">${startDate}</td>
+            <td class="date-cell">${endDate}</td>
+            <td class="content-cell">${content}</td>
+        </tr>
+    `;
 }
 
 // 处理搜索
@@ -243,9 +186,10 @@ function handleSearch(e) {
     } else {
         filteredData = currentData.filter(item => {
             const searchText = [
-                item.name,
+                item.troupe,
                 item.venue,
-                item.type,
+                item.date,
+                item.start_date,
                 item.actors,
                 item.raw_text
             ].filter(Boolean).join(' ').toLowerCase();
@@ -254,46 +198,123 @@ function handleSearch(e) {
         });
     }
 
-    renderDataList(filteredData);
+    renderTable(filteredData);
     dataCount.textContent = filteredData.length;
 }
 
-// 导出数据
-async function exportData(format) {
-    if (!currentData || currentData.length === 0) {
-        alert('暂无数据可导出');
+// 复制到剪贴板 (Tab-separated values for Excel/Feishu)
+function copyToClipboard() {
+    if (!filteredData || filteredData.length === 0) {
+        alert('暂无数据可复制');
         return;
     }
 
-    try {
-        const response = await fetch(`${API_BASE_URL}/export`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                format,
-                data: filteredData
-            })
-        });
+    // Build Header matching Feishu Fields (Troupe, Address, Start, End, Content)
+    // 剧团或词师名称	地址	开始日期	结束日期	内容详情
+    let tsvContent = "剧团或词师名称\t地址\t开始日期\t结束日期\t内容详情\n";
 
-        const result = await response.json();
+    filteredData.forEach(item => {
+        const startDate = item.start_date || item.date || '';
+        const endDate = item.end_date || item.date || '';
+        const troupe = item.troupe || '';
+        const address = item.venue || '';
+        // totalDays ignored
 
-        if (result.success) {
-            // TODO: 处理文件下载
-            alert(`导出${format}格式成功!`);
+        let content = '';
+        if (item.shows && item.shows.length > 0) {
+            // 复制时使用 " | " 分隔不同场次
+            content = item.shows.map(s => {
+                const time = s.time || '';
+                const info = s.info || '';
+                return time ? `${time} ${info}` : info;
+            }).join(' | ');
         } else {
-            alert(`导出失败: ${result.error}`);
+            content = item.location_note ? `定位:${item.location_note}` : (item.days_info || '');
         }
-    } catch (error) {
-        console.error('导出错误:', error);
-        alert('导出失败,请重试');
+
+        // 清理潜在的制表符或换行符
+        const cleanContent = content.replace(/\t/g, ' ').replace(/\n/g, ' ');
+
+        const row = [troupe, address, startDate, endDate, cleanContent].join('\t');
+        tsvContent += row + "\n";
+    });
+
+    navigator.clipboard.writeText(tsvContent).then(() => {
+        alert('已复制到剪贴板! (顺序: 剧团, 地址, 开始, 结束, 内容)');
+    }).catch(err => {
+        console.error('复制失败:', err);
+        alert('复制失败，请手动复制。');
+    });
+}
+
+// 导出数据 (保留原有接口，暂不重点维护)
+async function exportData(format) {
+    alert("请使用'复制为表格格式'功能直接粘贴到飞书，更方便！");
+}
+
+// 设置筛选监听器
+function setupFilterListeners() {
+    console.log('Setting up filter listeners');
+    const checkboxes = document.querySelectorAll('#regionCheckboxes input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+            console.log('Region checkbox changed');
+            filterData();
+            // 更新显示
+            // articleTitle.textContent = document.getElementById('articleTitle').textContent; 
+            dataCount.textContent = filteredData.length;
+            renderTable(filteredData);
+        });
+    });
+
+    // 搜索框也触发筛选
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            console.log('Search input changed');
+            filterData();
+            dataCount.textContent = filteredData.length;
+            renderTable(filteredData);
+        });
     }
 }
 
-// 工具函数:格式化日期
-function formatDate(dateString) {
-    if (!dateString) return '';
-    const date = new Date(dateString);
-    return date.toLocaleString('zh-CN');
+// 筛选数据
+function filterData() {
+    if (!currentData) return;
+
+    // 获取选中的地区
+    const selectedRegions = Array.from(document.querySelectorAll('#regionCheckboxes input[type="checkbox"]:checked'))
+        .map(cb => cb.value);
+
+    const searchInput = document.getElementById('searchInput');
+    const searchTerm = searchInput ? searchInput.value.trim().toLowerCase() : '';
+
+    filteredData = currentData.filter(item => {
+        // 1. 地区筛选
+        // 默认全选时如果一个没选可能意味着全不选? 
+        // 按照用户需求，默认选中了几个。如果用户全部取消勾选，应该显示为空还是显示所有?
+        // 通常 checkbox 筛选是 OR 关系。如果未选中任何地区，逻辑上应该是不显示任何数据。
+        if (selectedRegions.length > 0) {
+            const address = item.venue || '';
+            const regionMatch = selectedRegions.some(region => address.includes(region));
+            if (!regionMatch) return false;
+        }
+
+        // 2. 搜索筛选
+        if (searchTerm) {
+            const rawText = (item.raw_text || '').toLowerCase();
+            const troupe = (item.troupe || '').toLowerCase();
+            const venue = (item.venue || '').toLowerCase();
+            const showsContent = (item.shows || []).map(s => (s.info || '') + (s.time || '')).join(' ').toLowerCase();
+
+            return rawText.includes(searchTerm) ||
+                troupe.includes(searchTerm) ||
+                venue.includes(searchTerm) ||
+                showsContent.includes(searchTerm);
+        }
+
+        return true;
+    });
+    console.log('Filtered data count:', filteredData.length);
 }
