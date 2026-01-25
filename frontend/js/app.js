@@ -148,7 +148,7 @@ function renderTable(data) {
 function createRow(item) {
     // 使用后端计算的 start_date 和 end_date
     const startDate = item.start_date || item.date || '';
-    const endDate = item.end_date || item.date || '';
+    const endDate = item.end_date || '';
     const troupe = item.troupe || '';
     const address = item.venue || '';
     // 总天数（totalDays）不显示

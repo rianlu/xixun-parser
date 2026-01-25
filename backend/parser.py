@@ -203,22 +203,32 @@ class WeChatArticleParser:
                 # Format: （2026年1月20日<农历...>）Place...
                 item_date, item_lunar, clean_venue = self._parse_inline_date(venue_part)
                 
-                # 如果本行没有提取到日期，检查上一行
-                # 但要确保上一行不是另一条记录（不包含【】）
+                # 如果本行/回溯的地点中没有提取到日期，向上查找独立的日期行
+                # (处理被BS4断行为: DateLine -> VenueLine -> TroupeLine 的情况)
                 if not item_date and i > 0:
-                    prev_line = lines[i-1]
-                    # 只有当上一行不包含剧团标记时才回溯
-                    if '【' not in prev_line and '】' not in prev_line:
-                        prev_date, prev_lunar, prev_venue = self._parse_inline_date(prev_line)
-                        if prev_date:
-                            item_date = prev_date
-                            item_lunar = prev_lunar
-                            # 如果本行的venue_part为空，说明地址也在上一行
-                            if not venue_part or not venue_part.strip():
-                                clean_venue = prev_venue
-                            else:
-                                # 合并地址: 上一行的有效地址部分 + 本行的地址部分
-                                clean_venue = prev_venue + clean_venue
+                    check_idx = i - 1
+                    # 最多向上看3行
+                    while check_idx >= 0 and check_idx >= i - 3:
+                        prev_line = lines[check_idx]
+                        
+                        # 如果遇到另一个剧团标记，停止回溯，避免跨条目
+                        if '【' in prev_line or '】' in prev_line:
+                            break
+                        
+                        # 尝试提取日期
+                        found_date, found_lunar, found_rest = self._parse_inline_date(prev_line)
+                        if found_date:
+                            item_date = found_date
+                            item_lunar = found_lunar
+                            
+                            # 如果之前的venue为空，或者当前找到的行除了日期还有其他内容(可能是地点一部分)
+                            # 则将其合并到地点中。注意顺序：发现的行在更上面，所以放在前面。
+                            # 但要注意 found_rest 可能是空字符串(如果整行就是日期)
+                            if found_rest.strip():
+                                clean_venue = found_rest.strip() + clean_venue
+                            break
+                            
+                        check_idx -= 1
 
                 final_venue = clean_venue
                 final_date = item_date if item_date else current_date_info['date']
@@ -276,10 +286,10 @@ class WeChatArticleParser:
                 
                 # --- Post-processing after gathering all lines for this item ---
                 
-                # 1. 提取总天数 (e.g. "演出第3天，共5天" -> 5 or just "3天")
-                # 简单逻辑: 寻找数字
+                # 1. 提取总天数 (e.g. "演出第3天，共5天")
                 if perf.days_info:
-                    days_match = re.search(r'(\d+)', perf.days_info)
+                    # 修复：仅匹配“共X天”或“共X场”，避免误判“第X天”
+                    days_match = re.search(r'共(\d+)[天场]', perf.days_info)
                     if days_match:
                        perf.total_days = days_match.group(1)
 
@@ -306,16 +316,98 @@ class WeChatArticleParser:
                 else:
                     perf.start_date = perf.date
 
-                # 3. 结束日期目前默认为开始日期，或暂空
-                # 如果有总天数，也可以计算结束日期: start + total - 1
-                # 根据用户需求：End Date 默认为当前条目日期
-                perf.end_date = perf.date
+                # 3. 计算结束日期
+                # 逻辑优化：如果不自动推算(from total_days)，则尝试从【剧目详情】中提取最后一天
+                # 示例：
+                # （2月26日）晚上《...》
+                # ...
+                # （3月2日）下午《...》 -> End Date = 3月2日
+                
+                calculated_end_date = ""
+                
+                if perf.shows:
+                    last_show_date = None
+                    last_show_date_str = ""
+                    
+                    # 当前基准年份 (默认为文章年份)
+                    base_year = datetime.now().year
+                    if perf.start_date:
+                        try:
+                            start_dt = datetime.strptime(perf.start_date, '%Y年%m月%d日')
+                            base_year = start_dt.year
+                        except:
+                            pass
+
+                    for show in perf.shows:
+                        # 尝试从 show.time (e.g. "（2月26日）晚上") 或 show.info 中提取日期
+                        # 优先匹配 "X月X日" 格式
+                        # Combined check string
+                        full_show_str = (show.time + " " + show.info)
+                        
+                        # Regex to find dates like 2月26日, 02月26日
+                        # 排除年份，因为通常只有月日
+                        date_matches = re.finditer(r'(\d{1,2})月(\d{1,2})日', full_show_str)
+                        
+                        for match in date_matches:
+                            try:
+                                m = int(match.group(1))
+                                d = int(match.group(2))
+                                
+                                # Construct date object
+                                # Simple logic: use base_year. If month is smaller than start month by a lot, maybe next year? 
+                                # But usually performances are within same year or adjacent.
+                                # Let's assume same year for now, or next year if month < start_month and start_month is Dec
+                                
+                                # To be safe, just use base_year. 
+                                # Context: "2026年..." so base_year is 2026.
+                                
+                                current_dt = datetime(base_year, m, d)
+                                
+                                # Check for year rollover (e.g. starts in Dec, ends in Jan)
+                                # If we have a start date, we can compare
+                                if perf.start_date:
+                                    start_dt = datetime.strptime(perf.start_date, '%Y年%m月%d日')
+                                    # If extracted date is significantly before start date (e.g. Start Dec, Found Jan), add 1 year
+                                    if m < start_dt.month and start_dt.month == 12:
+                                         current_dt = datetime(base_year + 1, m, d)
+                                    # If extracted date is significantly after (unlikely for "last date" logic but possible)
+                                
+                                if last_show_date is None or current_dt > last_show_date:
+                                    last_show_date = current_dt
+                                    last_show_date_str = f"{current_dt.year}年{m}月{d}日"
+                            except:
+                                continue
+                    
+                    if last_show_date_str:
+                         # 如果找到的最后日期比开始日期晚（或相等），则认为是结束日期
+                         # 且只有当它真的晚于开始日期时才设定？或者直接设定
+                         # User says: "那么结束日期就是3月2日"
+                         calculated_end_date = last_show_date_str
+
+                perf.end_date = calculated_end_date
 
                 performances.append(perf)
                 perf_id_counter += 1
                 continue
             
             i += 1
+            
+        # Helper for sort key
+        def get_sort_date(p):
+            if not p.start_date:
+                return datetime.max
+            try:
+                return datetime.strptime(p.start_date.strip(), '%Y年%m月%d日')
+            except ValueError:
+                print(f"Skipping sort for item {p.id}: Invalid date format '{p.start_date}'")
+                return datetime.max
+
+        # 按开始日期排序 (Sort by start_date ascending)
+        try:
+            performances.sort(key=get_sort_date)
+            print("Sorting completed successfully.")
+        except Exception as e:
+            print(f"CRITICAL Sorting error: {e}")
             
         return performances
 
