@@ -397,58 +397,147 @@ function renderSyncPreview(actions) {
     const tbody = document.querySelector('#syncPreviewTable tbody');
     tbody.innerHTML = '';
 
+    // Calculate stats
+    let createCount = 0;
+    let updateCount = 0;
+    let deleteCount = 0;
+    let skipCount = 0;
+
+    actions.forEach(a => {
+        if (a.type === 'CREATE') createCount++;
+        else if (a.type === 'UPDATE') updateCount++;
+        else if (a.type === 'DELETE') deleteCount++;
+        else if (a.type === 'SKIP') skipCount++;
+    });
+
+    // Update Summary Logic
+    // "我只需要显示本次同步更新多少条数据。以及云端有哪些数据是不会被修改的"
+    const countInfo = document.getElementById('syncRemoteInfo');
+    if (countInfo) {
+        // Build summary string
+        let summaryHtml = `<div style="display: flex; gap: 20px; flex-wrap: wrap;">`;
+
+        // 1. Update/Add Count
+        const changeCount = createCount + updateCount;
+        summaryHtml += `<div style="padding: 10px; background: #e6fffa; border-radius: 4px; color: #008000;">
+            <strong>本次更新:</strong> <span style="font-size: 1.2em;">${changeCount}</span> 条数据 
+            <span style="font-size: 0.9em; color: #666;">(新增 ${createCount}, 更新 ${updateCount})</span>
+        </div>`;
+
+        // 2. Unchanged Count
+        summaryHtml += `<div style="padding: 10px; background: #f0f7ff; border-radius: 4px; color: #0052cc;">
+            <strong>云端保留(未修改):</strong> <span style="font-size: 1.2em;">${skipCount}</span> 条数据
+        </div>`;
+
+        // 3. Deletion Count (Hidden details but maybe show simplified count if needed, or hide as requested? 
+        // User said "不考虑删除的数据", better to just mention it briefly or ignore. 
+        // Let's hide it from the main view but maybe show a small note if > 0 just for safety?)
+        // If user wants to ignore completely, we can skip showing it or show it in gray.
+        // Let's add it in light gray
+        if (deleteCount > 0) {
+            summaryHtml += `<div style="padding: 10px; background: #fff5f5; border-radius: 4px; color: #cc0000; opacity: 0.6;">
+                <strong>将被移除(已隐藏):</strong> ${deleteCount} 条
+            </div>`;
+        }
+
+        summaryHtml += `</div>`;
+        countInfo.innerHTML = summaryHtml;
+    }
+
     if (actions.length === 0) {
         tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">数据已是最新，无需同步。</td></tr>';
         return;
     }
 
-    actions.forEach(action => {
-        if (action.type === 'SKIP') return;
+    // Sort: CREATE/UPDATE first, then SKIP. Hide DELETE.
+    // We can filter out DELETE
+    const displayActions = actions.filter(a => a.type !== 'DELETE');
 
+    // Sort logic: Chronological first, then by Type priority
+    displayActions.sort((a, b) => {
+        // Helper to parse date string to timestamp
+        const getTs = (d) => {
+            if (!d) return 0;
+            // Handle "2026年1月25日" -> "2026/1/25" for parsing
+            let s = d.replace(/年|月/g, '/').replace(/日/g, '');
+            // Handle "2026-01-25" -> "2026/01/25" (already works)
+            return new Date(s).getTime();
+        };
+
+        const dateA = getTs(a.date);
+        const dateB = getTs(b.date);
+
+        if (dateA !== dateB) {
+            return dateA - dateB;
+        }
+
+        // Tie-breaker: Type Priority (Update > Create > Skip)
+        const priority = { 'UPDATE': 1, 'CREATE': 2, 'SKIP': 3 };
+        return (priority[a.type] || 99) - (priority[b.type] || 99);
+    });
+
+    displayActions.forEach(action => {
         const tr = document.createElement('tr');
         let color = '#333';
         let label = action.type;
         let bgColor = '';
-
         let troupeDisplay = action.troupe || '-';
         let venueDisplay = action.venue || '-';
+        let endDateDisplay = action.end_date || '-';
+
+        // Format content for display (replace newlines with <br>)
+        let contentDisplay = (action.content || '').replace(/\n/g, '<br>');
 
         if (action.type === 'CREATE') {
             color = 'green'; label = '新增'; bgColor = '#e6fffa';
         }
         else if (action.type === 'UPDATE') {
             color = 'orange'; label = '更新'; bgColor = '#fffaf0';
-            // Show comparison if available
-            if (action.old_troupe && action.old_troupe !== action.troupe) {
-                troupeDisplay = `<span style="text-decoration:line-through; color:#aaa;">${action.old_troupe}</span><br><span style="color:orange;">${action.troupe}</span>`;
-            }
-            if (action.old_venue && action.old_venue !== action.venue) {
-                venueDisplay = `<span style="text-decoration:line-through; color:#aaa;">${action.old_venue}</span><br><span style="color:orange;">${action.venue}</span>`;
+
+            // Diff Helper
+            const diffHtml = (oldVal, newVal) => {
+                if (oldVal && oldVal !== newVal) {
+                    return `<div style="font-size:0.9em;color:#999;text-decoration:line-through;margin-bottom:2px;">${oldVal}</div>
+                             <div style="color:#e65100;font-weight:600;">${newVal || '(空)'}</div>`;
+                }
+                return newVal;
+            };
+
+            troupeDisplay = diffHtml(action.old_troupe, action.troupe);
+            venueDisplay = diffHtml(action.old_venue, action.venue);
+            endDateDisplay = diffHtml(action.old_end_date, action.end_date);
+
+            // Content Diff
+            if (action.old_content && action.old_content !== action.content) {
+                const oldC = (action.old_content || '').replace(/\n/g, '<br>');
+                const newC = (action.content || '').replace(/\n/g, '<br>');
+                contentDisplay = `<div style="font-size:0.9em;color:#999;text-decoration:line-through;margin-bottom:6px;border-bottom:1px dashed #ddd;padding-bottom:4px;">${oldC}</div>
+                                  <div style="color:#e65100;">${newC}</div>`;
             }
         }
-        else if (action.type === 'DELETE') {
-            // 全量替换策略: 删除所有旧的 System 数据
-            color = 'red'; label = '删除'; bgColor = '#fff5f5';
+        else if (action.type === 'SKIP') {
+            color = '#666'; label = '保留'; bgColor = '#f8f9fa';
         }
 
         tr.style.backgroundColor = bgColor;
-
-        // Format content for display (replace newlines with <br>)
-        const contentDisplay = (action.content || '').replace(/\n/g, '<br>');
 
         tr.innerHTML = `
             <td style="color: ${color}; font-weight: bold;">${label}</td>
             <td>${troupeDisplay}</td>
             <td>${venueDisplay}</td>
             <td>${action.date || '-'}</td>
-            <td>${action.end_date || '-'}</td>
+            <td>${endDateDisplay}</td>
             <td style="font-size: 13px; color: #555; white-space: nowrap;">${contentDisplay}</td>
         `;
         tbody.appendChild(tr);
     });
 
     if (tbody.children.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">没有变更 (所有数据已存在且被保护)</td></tr>';
+        if (deleteCount > 0) {
+            tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">仅有删除操作（已隐藏），请点击确认同步执行清理。</td></tr>';
+        } else {
+            tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 20px;">无可见变更</td></tr>';
+        }
     }
 }
 

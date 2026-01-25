@@ -196,142 +196,193 @@ class FeishuSync:
         remote_records = self.fetch_all_records()
         remote_count = len(remote_records)
         
-        # Helper function to extract text from Feishu field formats
+        # Helper function to extract text
         def extract_text(field):
-            """Extract text from various Feishu field formats"""
-            if not field:
-                return ""
-            # String
-            if isinstance(field, str):
-                return field
-            # Array of text objects: [{'text': '...', 'type': 'text'}]
+            if not field: return ""
+            if isinstance(field, str): return field
             if isinstance(field, list) and len(field) > 0:
-                if isinstance(field[0], dict) and 'text' in field[0]:
-                    return field[0]['text']
+                if isinstance(field[0], dict) and 'text' in field[0]: return field[0]['text']
                 return str(field[0])
-            # Location object: {'name': '...', 'full_address': '...'}
             if isinstance(field, dict):
                 return field.get("full_address", "") or field.get("name", "") or field.get("text", "")
             return str(field)
-        
-        # 2. Build Remote Index: Fingerprint -> Record
+            
+        # Helper: Generate Key (Date | Troupe)
+        # Note: Date needs to be string YYYY-MM-DD
+        def gen_key(date_val, troupe_val):
+            d_str = self.normalize_date(date_val)
+            t_str = str(troupe_val).strip()
+            return f"{d_str}|{t_str}"
+
+        # 2. Build Remote Index: Key -> Record
         remote_idx = {}
+        processed_remote_ids = set()
+        
         for r in remote_records:
             fds = r["fields"]
             r_date = fds.get(FIELD_MAP['start_date'])
             r_troupe = extract_text(fds.get(FIELD_MAP['troupe'], ""))
-            r_venue = extract_text(fds.get(FIELD_MAP['venue'], ""))
-            r_content = extract_text(fds.get(FIELD_MAP['content'], ""))
             
-            fp = self.generate_fingerprint(r_date, r_troupe, r_venue)
-            source = fds.get(SOURCE_FIELD, "")
+            key = gen_key(r_date, r_troupe)
             
-            remote_idx[fp] = {
+            # Store full record info
+            remote_idx[key] = {
                 "id": r["record_id"],
-                "source": source,
+                "source": fds.get(SOURCE_FIELD, ""),
                 "fields": fds,
-                "date_ts": r_date if isinstance(r_date, int) else 0,
+                "key": key,
                 "troupe": r_troupe,
-                "venue": r_venue,
-                "content": r_content
+                "venue": extract_text(fds.get(FIELD_MAP['venue'], "")),
+                "date": self.normalize_date(r_date),
+                "end_date_val": fds.get(FIELD_MAP['end_date']),
+                "content": extract_text(fds.get(FIELD_MAP['content'], ""))
             }
 
-        # 3. Full Replacement Strategy
-        # Step 1: Collect all System records for deletion
-        # Step 2: Create all new records from local data
         actions = []
-        
+
+        # 3. Process Local Data (Create, Update, Skip_Match)
         for perf in local_data:
             start_date = perf.get("start_date")
             troupe = perf.get("troupe")
             venue = perf.get("venue")
-
-            # Build fields payload
-            fields = {}
-            st_ts = self.parse_cn_date(start_date)
-            et_ts = self.parse_cn_date(perf.get("end_date"))
+            end_date = perf.get("end_date")
             
-            if st_ts: fields[FIELD_MAP['start_date']] = st_ts
-            if et_ts: fields[FIELD_MAP['end_date']] = et_ts
-            
-            fields[FIELD_MAP['troupe']] = troupe
-            fields[FIELD_MAP['venue']] = venue 
-            
-            # Format content: keep it simple
-            # - Single-day: just output "time info" (e.g., "下午 加演《祭塔》正本《王老虎抢亲》")
-            # - Multi-day: output "date info" with date converted to M.D format (e.g., "2.26 晚上《追鱼》加《打八仆》")
+            # Prepare Content
             raw_content = ""
             if perf.get("shows"):
                 show_strs = []
                 for s in perf["shows"]:
                     prefix = s.get("date", "") or s.get("time", "")
                     info = s.get("info", "")
-                    
-                    # Convert date format: '2月26日' -> '2.26'
-                    if prefix:
-                        prefix = re.sub(r'(\d+)月(\d+)日', r'\1.\2', prefix)
-                    
-                    # Simple concatenation
-                    if prefix:
-                        show_strs.append(f"{prefix} {info}")
-                    else:
-                        show_strs.append(info)
-                
+                    if prefix: prefix = re.sub(r'(\d+)月(\d+)日', r'\1.\2', prefix)
+                    if prefix: show_strs.append(f"{prefix} {info}")
+                    else: show_strs.append(info)
                 raw_content = "\n".join(show_strs)
+            else:
+                 raw_content = perf.get("content", "")
+
+            # Prepare Payload Fields
+            fields = {}
+            st_ts = self.parse_cn_date(start_date)
+            et_ts = self.parse_cn_date(end_date)
             
+            if st_ts: fields[FIELD_MAP['start_date']] = st_ts
+            if et_ts: fields[FIELD_MAP['end_date']] = et_ts
+            fields[FIELD_MAP['troupe']] = troupe
+            fields[FIELD_MAP['venue']] = venue 
             fields[FIELD_MAP['content']] = raw_content
-            
-            # Type
-            perf_type = perf.get("type", "戏剧")
-            fields[FIELD_MAP['type']] = perf_type
-            
-            # Total days
+            fields[FIELD_MAP['type']] = perf.get("type", "戏剧")
             if perf.get("total_days"):
-                try: 
-                    fields[FIELD_MAP['total_days']] = int(perf.get("total_days"))
-                except: 
-                    pass
-            
-            # Data source
+                try: fields[FIELD_MAP['total_days']] = int(perf.get("total_days"))
+                except: pass
             fields[SOURCE_FIELD] = SYSTEM_TAG
 
-            # All local data will be created (full replacement)
-            actions.append({
-                "type": "CREATE",
-                "desc": f"新增: {troupe} @ {venue}",
-                "fields": fields,
-                "troupe": troupe,
-                "venue": venue,
-                "date": start_date,
-                "end_date": perf.get("end_date", ""),
-                "content": raw_content
-            })
-
-
-        # 4. Delete all System records (full replacement)
-        for fp, rem in remote_idx.items():
-            if rem["source"] == SYSTEM_TAG:
-                # Extract end_date from remote record
-                r_end_date = rem["fields"].get(FIELD_MAP['end_date'])
-                end_date_str = ""
-                if r_end_date:
-                    if isinstance(r_end_date, int):
-                        end_date_str = datetime.fromtimestamp(r_end_date/1000).strftime('%Y-%m-%d')
-                    else:
-                        end_date_str = str(r_end_date)
+            # Match with Remote
+            key = gen_key(start_date, troupe)
+            
+            if key in remote_idx:
+                # MATCH FOUND
+                rem = remote_idx[key]
+                processed_remote_ids.add(rem['id'])
                 
-                # Insert DELETE actions at the beginning (delete first, then create)
-                actions.insert(0, {
-                    "type": "DELETE",
-                    "desc": f"清理旧数据: {rem['troupe']} @ {rem['venue']}",
-                    "id": rem["id"],
-                    "troupe": rem["troupe"],
-                    "venue": rem["venue"],
-                    "date": datetime.fromtimestamp(rem["date_ts"]/1000).strftime('%Y-%m-%d') if rem["date_ts"] else "Unknown",
-                    "end_date": end_date_str,
-                    "content": rem.get("content", "")
+                # Check protection status
+                is_manual = (rem['source'] != SYSTEM_TAG)
+                
+                if is_manual:
+                    # 如果是手动修改的数据 -> SKIP (Protect)
+                     actions.append({
+                        "type": "SKIP",
+                        "desc": f"保护手动数据: {troupe} ({rem['date']})",
+                        "troupe": troupe,
+                        "venue": rem['venue'], # Show remote venue to indicate what is preserved
+                        "date": rem['date'],
+                        "content": rem['content']
+                    })
+                else:
+                    # 如果是System数据 -> 检查是否包含更新
+                    # Compare Fields (Venue, EndDate, Content)
+                    # Note: We need to be careful with types (TS vs Int, etc)
+                    
+                    need_update = False
+                    
+                    # Venue
+                    if rem['venue'] != venue: need_update = True
+                    
+                    # Content
+                    if rem['content'] != raw_content: need_update = True
+                    
+                    # End Date
+                    rem_end_str = self.normalize_date(rem['end_date_val'])
+                    loc_end_str = self.normalize_date(et_ts)
+                    if rem_end_str != loc_end_str: 
+                        need_update = True
+
+                    if need_update:
+                        actions.append({
+                            "type": "UPDATE",
+                            "desc": f"更新: {troupe}",
+                            "id": rem['id'],
+                            "fields": fields,
+                            "troupe": troupe,
+                            "venue": venue,
+                            "date": start_date,
+                            "end_date": perf.get("end_date", ""),
+                            "content": raw_content,
+                            
+                            "old_venue": rem['venue'],
+                            "old_troupe": rem['troupe'],
+                            "old_end_date": rem_end_str,
+                            "old_content": rem['content']
+                        })
+                    else:
+                        actions.append({
+                            "type": "SKIP", # Or "SAME" - usually filtered out in UI or shown as skipped
+                            "desc": f"无变更: {troupe}",
+                            "troupe": troupe,
+                            "venue": venue,
+                            "date": start_date,
+                            "content": raw_content
+                        })
+
+            else:
+                # NO MATCH -> CREATE
+                actions.append({
+                    "type": "CREATE",
+                    "desc": f"新增: {troupe} @ {venue}",
+                    "fields": fields,
+                    "troupe": troupe,
+                    "venue": venue,
+                    "date": start_date,
+                    "end_date": end_date,
+                    "content": raw_content
                 })
 
+        # 4. Process Deletions (Remote records NOT matched in local)
+        # Only delete if Source == System
+        for key, rem in remote_idx.items():
+            if rem['id'] not in processed_remote_ids:
+                if rem['source'] == SYSTEM_TAG:
+                    end_date_str = self.normalize_date(rem['end_date_val'])
+                    actions.append({
+                        "type": "DELETE",
+                        "desc": f"删除过期: {rem['troupe']}",
+                        "id": rem['id'],
+                        "troupe": rem['troupe'],
+                        "venue": rem['venue'],
+                        "date": rem['date'],
+                        "end_date": end_date_str,
+                        "content": rem['content']
+                    })
+                else:
+                    # Protection for unmatched manual records (maybe they are old, or custom added)
+                    actions.append({
+                        "type": "SKIP",
+                        "desc": f"保留额外手动数据: {rem['troupe']}",
+                        "troupe": rem['troupe'],
+                        "venue": rem['venue'],
+                        "date": rem['date'],
+                        "content": rem['content']
+                    })
 
         return {"actions": actions, "remote_count": remote_count}
 
