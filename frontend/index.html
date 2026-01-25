@@ -12,11 +12,13 @@
     <div class="container">
         <!-- 头部 -->
         <header class="header">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+                <span class="icon">🌓</span>
+            </button>
             <h1 class="title">
-                <span class="icon">🎭</span>
                 戏讯解析助手
             </h1>
-            <p class="subtitle">微信公众号戏讯数据智能解析工具</p>
+            <p class="subtitle">微信公众号戏讯数据智能解析引擎 · 让戏曲信息触手可及</p>
         </header>
 
         <!-- 输入区域 -->
@@ -27,15 +29,12 @@
                     输入微信公众号文章链接
                 </label>
                 <div class="input-group">
-                    <input type="url" id="urlInput" class="url-input" placeholder="https://mp.weixin.qq.com/s/..."
-                        autocomplete="off">
+                    <input type="url" id="urlInput" class="url-input"
+                        placeholder="请粘贴 https://mp.weixin.qq.com/s/... 链接" autocomplete="off">
                     <button id="parseBtn" class="parse-btn">
                         <span class="btn-text">开始解析</span>
                         <span class="btn-icon">→</span>
                     </button>
-                </div>
-                <div class="input-hint">
-                    示例: https://mp.weixin.qq.com/s/wg5cEjxl6ECctuQf1pXrjQ
                 </div>
             </div>
         </section>
@@ -43,7 +42,7 @@
         <!-- 加载状态 -->
         <div id="loadingState" class="loading-state hidden">
             <div class="spinner"></div>
-            <p class="loading-text">正在解析文章内容...</p>
+            <p class="loading-text">正在智能提取戏讯数据，请稍候...</p>
         </div>
 
         <!-- 错误提示 -->
@@ -55,15 +54,17 @@
 
         <!-- 结果区域 -->
         <section id="resultSection" class="result-section hidden">
+
             <!-- 统计信息 -->
             <div class="stats-bar">
                 <div class="stat-item">
-                    <span class="stat-label">文章标题</span>
-                    <span class="stat-value" id="articleTitle">-</span>
-                </div>
-                <div class="stat-item">
                     <span class="stat-label">数据条数</span>
                     <span class="stat-value" id="dataCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">文章来源</span>
+                    <span class="stat-value" id="articleTitle"
+                        style="font-size: 1rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;">-</span>
                 </div>
             </div>
 
@@ -72,21 +73,21 @@
                 <div class="filter-section">
                     <!-- 地区筛选 -->
                     <div class="region-filter">
-                        <label class="filter-label">地区筛选:</label>
+                        <label class="filter-label">地区筛选</label>
                         <div class="checkbox-group" id="regionCheckboxes">
-                            <label><input type="checkbox" value="龙港" checked> 龙港</label>
-                            <label><input type="checkbox" value="平阳" checked> 平阳</label>
-                            <label><input type="checkbox" value="苍南" checked> 苍南</label>
-                            <label><input type="checkbox" value="鹿城"> 鹿城</label>
-                            <label><input type="checkbox" value="龙湾"> 龙湾</label>
-                            <label><input type="checkbox" value="瓯海"> 瓯海</label>
-                            <label><input type="checkbox" value="洞头"> 洞头</label>
-                            <label><input type="checkbox" value="瑞安"> 瑞安</label>
-                            <label><input type="checkbox" value="乐清"> 乐清</label>
-                            <label><input type="checkbox" value="永嘉"> 永嘉</label>
-                            <label><input type="checkbox" value="文成"> 文成</label>
-                            <label><input type="checkbox" value="泰顺"> 泰顺</label>
-                            <label><input type="checkbox" value="玉环"> 玉环</label>
+                            <label><input type="checkbox" value="龙港" checked> <span>龙港</span></label>
+                            <label><input type="checkbox" value="平阳" checked> <span>平阳</span></label>
+                            <label><input type="checkbox" value="苍南" checked> <span>苍南</span></label>
+                            <label><input type="checkbox" value="鹿城"> <span>鹿城</span></label>
+                            <label><input type="checkbox" value="龙湾"> <span>龙湾</span></label>
+                            <label><input type="checkbox" value="瓯海"> <span>瓯海</span></label>
+                            <label><input type="checkbox" value="洞头"> <span>洞头</span></label>
+                            <label><input type="checkbox" value="瑞安"> <span>瑞安</span></label>
+                            <label><input type="checkbox" value="乐清"> <span>乐清</span></label>
+                            <label><input type="checkbox" value="永嘉"> <span>永嘉</span></label>
+                            <label><input type="checkbox" value="文成"> <span>文成</span></label>
+                            <label><input type="checkbox" value="泰顺"> <span>泰顺</span></label>
+                            <label><input type="checkbox" value="玉环"> <span>玉环</span></label>
                         </div>
                     </div>
 
@@ -98,28 +99,31 @@
                     </div>
                 </div>
 
-                <div class="action-buttons">
-                    <button class="action-btn" onclick="exportData('excel')">
-                        <span>📊</span> 导出Excel
-                    </button>
-                    <button class="action-btn" onclick="exportData('csv')">
-                        <span>📄</span> 导出CSV
-                    </button>
-                    <button class="action-btn" onclick="exportData('json')">
-                        <span>💾</span> 导出JSON
-                    </button>
-                </div>
-            </div>
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                    <div class="action-buttons">
+                        <button class="action-btn" onclick="exportData('excel')">
+                            <span>📊</span> Excel
+                        </button>
+                        <button class="action-btn" onclick="exportData('csv')">
+                            <span>📄</span> CSV
+                        </button>
+                        <button class="action-btn" onclick="exportData('json')">
+                            <span>💾</span> JSON
+                        </button>
+                    </div>
 
-            <!-- 工具栏 -->
-            <div class="toolbar" style="margin-bottom: 10px; display: flex; justify-content: flex-end;">
-                <button class="action-btn" onclick="copyToClipboard()" style="background-color: #2da44e; color: white;">
-                    <span>📋</span> 复制为表格格式 (用于飞书)
-                </button>
-                <button class="action-btn" onclick="previewSync()"
-                    style="background-color: #3370ff; color: white; margin-left: 10px;">
-                    <span>🔄</span> 同步到飞书
-                </button>
+                    <!-- 工具栏 -->
+                    <div class="toolbar">
+                        <button class="action-btn" onclick="copyToClipboard()"
+                            style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                            <span>📋</span> 复制表格
+                        </button>
+                        <button class="action-btn" onclick="previewSync()"
+                            style="background: linear-gradient(135deg, #2980b9 0%, #6dd5fa 100%);">
+                            <span>🔄</span> 同步飞书
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <!-- 数据表格 -->
@@ -127,15 +131,18 @@
                 <table id="dataTable" class="data-table">
                     <thead>
                         <tr>
-                            <th>剧团或词师名称</th>
-                            <th>地址</th>
-                            <th>开始日期</th>
-                            <th>结束日期</th>
-                            <th>内容详情</th>
+                            <th style="min-width: 140px;">剧团/词师</th>
+                            <th style="min-width: 140px;">演出地址</th>
+                            <th style="min-width: 100px;">开始日期</th>
+                            <th style="min-width: 100px;">结束日期</th>
+                            <th>演出详情</th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
                         <!-- 数据行将动态生成 -->
+                        <tr>
+                            <td colspan="5" style="text-align:center; padding: 40px; color: #aaa;">暂无数据</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -143,7 +150,7 @@
 
         <!-- 页脚 -->
         <footer class="footer">
-            <p>© 2026 戏讯解析助手 | 让戏曲信息触手可及</p>
+            <p>© 2026 戏讯解析助手 | Designed for Opera Lovers</p>
         </footer>
     </div>
 

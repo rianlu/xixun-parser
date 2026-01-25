@@ -21,6 +21,8 @@ const tableBody = document.getElementById('tableBody');
 
 // 初始化
 document.addEventListener('DOMContentLoaded', () => {
+    initTheme(); // Initialize Theme
+
     // 绑定事件
     parseBtn.addEventListener('click', handleParse);
     urlInput.addEventListener('keypress', (e) => {
@@ -541,8 +543,38 @@ function renderSyncPreview(actions) {
     }
 }
 
-function closeSyncModal() {
-    document.getElementById('syncModal').style.display = 'none';
+// --- Theme Handling ---
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        updateThemeIcon(true);
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+        updateThemeIcon(false);
+    }
+}
+
+function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const isDark = current === 'dark';
+
+    if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        updateThemeIcon(false);
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        updateThemeIcon(true);
+    }
+}
+
+function updateThemeIcon(isDark) {
+    const btn = document.querySelector('.theme-toggle .icon');
+    if (btn) btn.textContent = isDark ? '🌙' : '☀️';
 }
 
 function confirmSync() {
