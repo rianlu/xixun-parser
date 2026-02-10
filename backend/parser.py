@@ -121,9 +121,25 @@ class WeChatArticleParser:
         for tag in soup(['script', 'style']):
             tag.decompose()
         
-        # 获取纯文本行
-        text_content = soup.get_text(separator='\n', strip=True)
-        text_content = soup.get_text(separator='\n', strip=True)
+        # 智能提取文本：保持块级元素换行，合并行内元素
+        # 1. 处理换行符
+        for br in soup.find_all('br'):
+            br.replace_with('\n')
+        
+        # 2. 在块级元素后插入换行符，确保视觉分行
+        block_tags = ['p', 'div', 'section', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li', 'tr']
+        for tag in soup.find_all(block_tags):
+            try:
+                tag.insert_before('\n')
+                tag.insert_after('\n')
+            except:
+                pass
+                
+        # 3. 提取文本，不使用默认分隔符（合并span），但保留strip以清除多余空白
+        # get_text(strip=True) 会移除每个文本节点的首尾空白，对于紧凑的中文排版通常是合适的
+        # UPDATE: strip=True 会移除我们手动插入的换行符（因为它们只是空白字符串），所以必须由 strip=False
+        text_content = soup.get_text(separator='', strip=False)
+
         raw_lines = [line.strip() for line in text_content.split('\n') if line.strip()]
         
         # 预处理：合并被意外断行的【剧团】括号
