@@ -469,7 +469,8 @@ class WeChatArticleParser:
         """
         # 统一的日期模式，支持所有变体
         # （?表示开头括号可选，[<＜]表示半角或全角左尖括号，）?表示结尾括号可选
-        pattern = r'（?(\d{4}年\d{1,2}月\d{1,2}日)[<＜《]([^>＞》]+)[>＞》]）?'
+        # Update: Make closing bracket optional to handle malformed text like "（...<...）" where > is missing
+        pattern = r'（?(\d{4}年\d{1,2}月\d{1,2}日)[<＜《]([^>＞》）]+)[>＞》]?）?'
         
         match = re.search(pattern, text)
         if match:

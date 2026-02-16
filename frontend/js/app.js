@@ -619,3 +619,7 @@ window.onclick = function (event) {
         closeSyncModal();
     }
 }
+
+function closeSyncModal() {
+    document.getElementById('syncModal').style.display = 'none';
+}

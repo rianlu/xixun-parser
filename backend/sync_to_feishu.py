@@ -305,6 +305,7 @@ class FeishuSync:
                     
                     need_update = False
                     
+
                     # Venue
                     if rem['venue'] != venue: need_update = True
                     
@@ -312,9 +313,12 @@ class FeishuSync:
                     if rem['content'] != raw_content: need_update = True
                     
                     # End Date
+                    # User feedback: Don't overwrite existing remote end_date (likely manual) with empty local end_date
                     rem_end_str = self.normalize_date(rem['end_date_val'])
                     loc_end_str = self.normalize_date(et_ts)
-                    if rem_end_str != loc_end_str: 
+                    
+                    # Only check for update if local has a non-empty end date
+                    if et_ts and rem_end_str != loc_end_str: 
                         need_update = True
 
                     if need_update:
