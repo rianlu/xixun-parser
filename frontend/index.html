@@ -12,7 +12,7 @@
     <div class="container">
         <!-- 头部 -->
         <header class="header">
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+            <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Theme">
                 <span class="icon">🌓</span>
             </button>
             <h1 class="title">
@@ -49,7 +49,7 @@
         <div id="errorState" class="error-state hidden">
             <div class="error-icon">⚠️</div>
             <p class="error-message" id="errorMessage"></p>
-            <button class="retry-btn" onclick="hideError()">重试</button>
+            <button id="retryBtn" class="retry-btn">重试</button>
         </div>
 
         <!-- 结果区域 -->
@@ -63,8 +63,7 @@
                 </div>
                 <div class="stat-item">
                     <span class="stat-label">文章来源</span>
-                    <span class="stat-value" id="articleTitle"
-                        style="font-size: 1rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;">-</span>
+                    <span class="stat-value article-title" id="articleTitle">-</span>
                 </div>
             </div>
 
@@ -99,27 +98,25 @@
                     </div>
                 </div>
 
-                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <div class="actions-row">
                     <div class="action-buttons">
-                        <button class="action-btn" onclick="exportData('excel')">
+                        <button class="action-btn export-btn" data-format="excel">
                             <span>📊</span> Excel
                         </button>
-                        <button class="action-btn" onclick="exportData('csv')">
+                        <button class="action-btn export-btn" data-format="csv">
                             <span>📄</span> CSV
                         </button>
-                        <button class="action-btn" onclick="exportData('json')">
+                        <button class="action-btn export-btn" data-format="json">
                             <span>💾</span> JSON
                         </button>
                     </div>
 
                     <!-- 工具栏 -->
                     <div class="toolbar">
-                        <button class="action-btn" onclick="copyToClipboard()"
-                            style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                        <button id="copyBtn" class="action-btn action-btn-copy">
                             <span>📋</span> 复制表格
                         </button>
-                        <button class="action-btn" onclick="previewSync()"
-                            style="background: linear-gradient(135deg, #2980b9 0%, #6dd5fa 100%);">
+                        <button id="syncPreviewBtn" class="action-btn action-btn-sync">
                             <span>🔄</span> 同步飞书
                         </button>
                     </div>
@@ -141,7 +138,7 @@
                     <tbody id="tableBody">
                         <!-- 数据行将动态生成 -->
                         <tr>
-                            <td colspan="5" style="text-align:center; padding: 40px; color: #aaa;">暂无数据</td>
+                            <td class="table-empty-cell large" colspan="5">暂无数据</td>
                         </tr>
                     </tbody>
                 </table>
@@ -155,23 +152,19 @@
     </div>
 
     <!-- Sync Preview Modal -->
-    <div id="syncModal" class="modal"
-        style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
-        <div class="modal-content"
-            style="background-color: #fefefe; margin: 5% auto; padding: 20px; border: 1px solid #888; width: 95%; max-width: 1200px; border-radius: 8px; position: relative;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <h2 style="margin: 0;">同步预览</h2>
-                <span onclick="closeSyncModal()"
-                    style="color: #aaa; font-size: 28px; font-weight: bold; cursor: pointer; line-height: 1;">&times;</span>
+    <div id="syncModal" class="modal sync-modal hidden">
+        <div class="modal-content sync-modal-content">
+            <div class="sync-modal-header">
+                <h2 class="sync-modal-title">同步预览</h2>
+                <button id="syncModalCloseIconBtn" class="sync-modal-close" aria-label="关闭">&times;</button>
             </div>
 
-            <div id="syncRemoteInfo"
-                style="margin-bottom: 10px; padding: 10px; background-color: #f8f9fa; border-radius: 4px; font-size: 14px;">
+            <div id="syncRemoteInfo" class="sync-remote-info">
             </div>
 
-            <div style="max-height: 500px; overflow-y: auto; margin-bottom: 20px; border: 1px solid #eee;">
-                <table id="syncPreviewTable" class="data-table" style="width: 100%; margin: 0;">
-                    <thead style="position: sticky; top: 0; background: #fff; z-index: 1;">
+            <div class="sync-table-wrap">
+                <table id="syncPreviewTable" class="data-table sync-preview-table">
+                    <thead class="sync-preview-thead">
                         <tr>
                             <th style="width: 60px;">操作</th>
                             <th style="width: 150px;">剧团</th>
@@ -184,11 +177,9 @@
                     <tbody></tbody>
                 </table>
             </div>
-            <div style="display: flex; justify-content: flex-end; gap: 10px;">
-                <button onclick="closeSyncModal()" class="action-btn"
-                    style="background-color: #f0f0f0; color: #333; border: 1px solid #ccc;">取消</button>
-                <button onclick="confirmSync()" class="action-btn"
-                    style="background-color: #3370ff; color: white;">确认同步</button>
+            <div class="sync-modal-actions">
+                <button id="syncCancelBtn" class="action-btn sync-cancel-btn">取消</button>
+                <button id="syncConfirmBtn" class="action-btn sync-confirm-btn">确认同步</button>
             </div>
         </div>
     </div>
