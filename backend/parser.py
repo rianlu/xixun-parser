@@ -268,6 +268,11 @@ class WeChatArticleParser:
                     location_note=loc_note,
                     raw_text=line
                 )
+
+                # 收集“行首月日”提示，仅用于结束日期推算，不一定写入shows
+                date_hints_md = []
+                current_md = self._extract_cn_full_date_md(perf.date)
+                same_day_fallback_rows = []
                 
                 # 向下读取更多信息：剧目、时间、天数
                 i += 1
@@ -285,6 +290,21 @@ class WeChatArticleParser:
                         perf.days_info = next_line
                         i += 1
                         continue
+
+                    # 识别类似“（2月21日）...”的行首日期，兼容异常结尾括号“》”
+                    md_prefix = self._extract_line_md_prefix(next_line)
+                    if md_prefix:
+                        date_hints_md.append(md_prefix)
+
+                        # 仅记录“当天日期行”作为兜底候选；其它日期不允许进入详情
+                        if current_md and md_prefix == current_md:
+                            same_day_fallback_rows.append(next_line)
+
+                        # 特殊场景：已有“演出第X天”时，后续“非当天日期”行仅用于推算结束日期
+                        # 避免把后几天演出详情并入当前条目内容
+                        if perf.days_info and current_md and md_prefix != current_md:
+                            i += 1
+                            continue
                     
                     # 匹配剧目信息 (下午/晚上)
                     # Common formats: "下午: 戏名", "晚上: 戏名"
@@ -299,6 +319,19 @@ class WeChatArticleParser:
                     # 这里暂且认为非剧目非天数非新条目的行，可能是杂音，或者未处理格式
                     # 为了安全，若不匹配任何已知模式，暂时跳过
                     i += 1
+
+                # 兜底：若本条目没有识别到shows，但存在“当天日期行”，则仅用当天行补一条详情
+                if not perf.shows and current_md and same_day_fallback_rows:
+                    for row in same_day_fallback_rows:
+                        parsed_md, rest = self._split_md_prefixed_line(row)
+                        if parsed_md and parsed_md == current_md and rest:
+                            perf.shows.append(
+                                Show(
+                                    time=f"{parsed_md[0]}月{parsed_md[1]}日",
+                                    info=rest
+                                )
+                            )
+                            break
                 
                 # --- Post-processing after gathering all lines for this item ---
                 
@@ -393,6 +426,21 @@ class WeChatArticleParser:
                                     last_show_date_str = f"{current_dt.year}年{m}月{d}日"
                             except:
                                 continue
+
+                    # 补充：把“仅用于结束日期”的行首月日提示也纳入候选
+                    for m, d in date_hints_md:
+                        try:
+                            current_dt = datetime(base_year, m, d)
+                            if perf.start_date:
+                                start_dt = datetime.strptime(perf.start_date, '%Y年%m月%d日')
+                                if m < start_dt.month and start_dt.month == 12:
+                                    current_dt = datetime(base_year + 1, m, d)
+
+                            if last_show_date is None or current_dt > last_show_date:
+                                last_show_date = current_dt
+                                last_show_date_str = f"{current_dt.year}年{m}月{d}日"
+                        except:
+                            continue
                     
                     if last_show_date_str:
                          # 如果找到的最后日期比开始日期晚（或相等），则认为是结束日期
@@ -508,6 +556,41 @@ class WeChatArticleParser:
              return Show(time=date_prefix.strip(), info=content)
              
         return None
+
+    def _extract_cn_full_date_md(self, date_str):
+        """从'YYYY年M月D日'提取(月,日)"""
+        if not date_str:
+            return None
+        m = re.search(r'(\d{4})年(\d{1,2})月(\d{1,2})日', date_str)
+        if not m:
+            return None
+        return int(m.group(2)), int(m.group(3))
+
+    def _extract_line_md_prefix(self, line):
+        """提取行首月日，兼容 (2月21日)、（2月21日）和异常结尾“》”"""
+        if not line:
+            return None
+        m = re.match(r'^\s*[（(]?\s*(\d{1,2})月(\d{1,2})日\s*[）)》>]?', line)
+        if not m:
+            return None
+        try:
+            return int(m.group(1)), int(m.group(2))
+        except:
+            return None
+
+    def _split_md_prefixed_line(self, line):
+        """拆分行首月日与剩余文本；仅用于当天内容兜底。"""
+        if not line:
+            return None, ""
+        m = re.match(r'^\s*[（(]?\s*(\d{1,2})月(\d{1,2})日\s*[）)》>]?\s*[:：]?\s*(.*)$', line)
+        if not m:
+            return None, line.strip()
+        try:
+            md = (int(m.group(1)), int(m.group(2)))
+            rest = (m.group(3) or "").strip()
+            return md, rest
+        except:
+            return None, line.strip()
 
     def close(self):
         if self.driver:
