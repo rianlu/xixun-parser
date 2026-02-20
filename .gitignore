@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Local virtual environment
+venv/
+.venv/
+
+# Parser debug/output artifacts
+backend/data/content_*.html
+backend/data/result_*.json
+
+# Logs
+*.log
