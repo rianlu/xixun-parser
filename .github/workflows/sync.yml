@@ -2,8 +2,8 @@ name: Telegram 戏讯解析同步
 
 on:
   schedule:
-    # 每 5 分钟检查一次机器人消息 (GitHub 定时任务)
-    - cron: '*/5 * * * *'
+    # 每 1 小时检查一次机器人消息 (GitHub 定时任务，节省额度且稳定)
+    - cron: '0 * * * *'
   workflow_dispatch:
     # 允许手动触发测试
 
@@ -41,28 +41,34 @@ jobs:
 
           TOKEN = os.getenv("TG_TOKEN")
           
-          # 1. 调试：获取机器人基本信息
-          try:
-              me = requests.get(f"https://api.telegram.org/bot{TOKEN}/getMe", timeout=10).json()
-              if me.get("ok"):
-                  print(f"🤖 机器人状态正常: @{me['result']['username']}")
-              else:
-                  print(f"❌ Bot Token 可能无效: {me}")
-                  sys.exit(1)
-          except Exception as e:
-              print(f"无法连接 Telegram API: {e}")
-              sys.exit(1)
+          def send_msg(chat_id, text):
+              try:
+                  url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+                  res = requests.post(url, data={"chat_id": chat_id, "text": text}, timeout=10).json()
+                  return res
+              except Exception as e:
+                  print(f"发送消息失败: {e}")
+                  return {}
 
-          # 2. 获取消息 (不带 offset 尝试拉取最近所有消息)
+          def edit_msg(chat_id, message_id, text):
+              try:
+                  url = f"https://api.telegram.org/bot{TOKEN}/editMessageText"
+                  res = requests.post(url, data={"chat_id": chat_id, "message_id": message_id, "text": text}, timeout=10).json()
+                  return res
+              except Exception as e:
+                  print(f"编辑消息失败: {e}")
+                  return {}
+
+          # 1. 获取消息
           print("正在拉取待处理消息...")
-          resp = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates", timeout=10).json()
-          
-          if not resp.get("ok"):
-              print(f"获取更新失败: {resp}")
-              sys.exit(1)
+          try:
+              resp = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates", timeout=10).json()
+          except Exception as e:
+              print(f"获取更新失败: {e}")
+              sys.exit(0)
               
           results = resp.get("result", [])
-          print(f"收到 {len(results)} 条原始记录。")
+          print(f"收到 {len(results)} 条待处理记录。")
 
           if results:
               for update in results:
@@ -71,36 +77,34 @@ jobs:
                   text = message.get("text", "")
                   chat_id = message.get("chat", {}).get("id")
                   
-                  if not text:
-                      continue
+                  if text and "mp.weixin.qq.com" in text:
+                      url_target = text.strip()
+                      print(f"🎯 处理链接: {url_target}")
                       
-                  # 识别微信公众号链接
-                  if "mp.weixin.qq.com" in text:
-                      print(f"🎯 发现目标链接: {text}")
-                      url = text.strip()
+                      # --- 状态优化：立刻给用户反馈 ---
+                      status_resp = send_msg(chat_id, f"⌛ 发现戏讯链接，正在解析同步到飞书，请稍候...\n\n🔗 {url_target}")
+                      msg_id = status_resp.get("result", {}).get("message_id")
                       
-                      # 3. 执行解析同步
-                      print(f"🚀 开始同步到飞书...")
+                      # 2. 执行解析同步
                       result = subprocess.run(
-                          [sys.executable, "backend/cli.py", url, "-y"],
-                          capture_output=True,
-                          text=True
+                          [sys.executable, "backend/cli.py", url_target, "-y"],
+                          capture_output=True, text=True
                       )
                       
-                      # 4. 反馈结果
+                      # 3. 更新反馈消息 (Edit Message)
                       if result.returncode == 0:
-                          status_msg = f"✅ 同步成功！\n解析到戏讯数据已更新到飞书。"
+                          final_text = f"✅ 同步成功！\n数据已解析并更新至飞书多维表格。\n\n🔗 {url_target}"
                       else:
                           err_info = result.stderr or result.stdout
-                          status_msg = f"❌ 同步失败！\n错误详情: {err_info[:500]}..."
+                          final_text = f"❌ 同步失败！\n\n原因: {err_info[:200]}...\n\n🔗 {url_target}"
                       
-                      requests.post(
-                          f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
-                          data={"chat_id": chat_id, "text": status_msg}
-                      )
+                      if msg_id:
+                          edit_msg(chat_id, msg_id, final_text)
+                      else:
+                          send_msg(chat_id, final_text)
                       
-                      # 5. 确认消息已读 (通过 offset)
+                      # 4. 确认消息已读 (通过 offset)
                       requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates", params={"offset": update_id + 1})
           else:
-              print("📭 暂无待处理消息。请确保你刚才在 Telegram 私聊中发过链接！")
+              print("暂无新消息。")
           EOF
