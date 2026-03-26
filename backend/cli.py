@@ -23,8 +23,17 @@ def main():
     print_colored("\n=== 🎭 戏讯一键解析同步工具 ===", "1;36") # Cyan
     
     # 1. Input URL
-    if len(sys.argv) > 1:
-        url = sys.argv[1]
+    args = sys.argv[1:]
+    auto_confirm = False
+    if "-y" in args:
+        auto_confirm = True
+        args.remove("-y")
+    if "--yes" in args:
+        auto_confirm = True
+        args.remove("--yes")
+
+    if args:
+        url = args[0]
     else:
         try:
             url = input("\n请输入微信公众号文章链接: ").strip()
@@ -135,11 +144,15 @@ def main():
 
     # 5. Confirm
     print("\n")
-    try:
-        confirm = input("❓ 是否确认执行同步? (y/N): ").strip().lower()
-    except KeyboardInterrupt:
-        print("\n已取消")
-        return
+    if auto_confirm:
+        print_colored("🤖 已启用自动确认 (--yes)，跳过手动确认步骤。", "36")
+        confirm = 'y'
+    else:
+        try:
+            confirm = input("❓ 是否确认执行同步? (y/N): ").strip().lower()
+        except KeyboardInterrupt:
+            print("\n已取消")
+            return
 
     if confirm == 'y':
         print_colored("\n🔄 正在执行同步...", "33")
