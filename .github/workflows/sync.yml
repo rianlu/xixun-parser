@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 获取项目代码
-        uses: actions/checkout@v4
+        uses: checkout@v4 # 修正为官方写法缩写或全称，github 推荐 uses: actions/checkout@v4
 
       - name: 设置 Python 3.10
         uses: actions/setup-python@v5
@@ -30,7 +30,6 @@ jobs:
         env:
           TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-          # 将当前目录加入 Python 搜索路径，确保 cli.py 能找到 backend 文件夹
           PYTHONPATH: ${{ github.workspace }}
         run: |
           python << 'EOF'
@@ -41,50 +40,67 @@ jobs:
           import sys
 
           TOKEN = os.getenv("TG_TOKEN")
-          # 1. 获取最近的消息
-          try:
-              resp = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates", timeout=10).json()
-          except Exception as e:
-              print(f"请求 Telegram API 失败: {e}")
-              sys.exit(0)
           
-          if resp.get("ok") and resp.get("result"):
-              for update in resp["result"]:
+          # 1. 调试：获取机器人基本信息
+          try:
+              me = requests.get(f"https://api.telegram.org/bot{TOKEN}/getMe", timeout=10).json()
+              if me.get("ok"):
+                  print(f"🤖 机器人状态正常: @{me['result']['username']}")
+              else:
+                  print(f"❌ Bot Token 可能无效: {me}")
+                  sys.exit(1)
+          except Exception as e:
+              print(f"无法连接 Telegram API: {e}")
+              sys.exit(1)
+
+          # 2. 获取消息 (不带 offset 尝试拉取最近所有消息)
+          print("正在拉取待处理消息...")
+          resp = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates", timeout=10).json()
+          
+          if not resp.get("ok"):
+              print(f"获取更新失败: {resp}")
+              sys.exit(1)
+              
+          results = resp.get("result", [])
+          print(f"收到 {len(results)} 条原始记录。")
+
+          if results:
+              for update in results:
                   update_id = update["update_id"]
                   message = update.get("message", {})
                   text = message.get("text", "")
                   chat_id = message.get("chat", {}).get("id")
                   
+                  if not text:
+                      continue
+                      
                   # 识别微信公众号链接
                   if "mp.weixin.qq.com" in text:
-                      print(f"发现新链接: {text}")
+                      print(f"🎯 发现目标链接: {text}")
                       url = text.strip()
                       
-                      # 2. 执行解析同步脚本
-                      print(f"🚀 开始同步: {url}")
-                      # 使用 sys.executable 确保使用相同的 python 解释器
-                      # 使用 -y 参数开启自动确认
+                      # 3. 执行解析同步
+                      print(f"🚀 开始同步到飞书...")
                       result = subprocess.run(
                           [sys.executable, "backend/cli.py", url, "-y"],
                           capture_output=True,
                           text=True
                       )
                       
-                      # 3. 反馈结果给用户
+                      # 4. 反馈结果
                       if result.returncode == 0:
                           status_msg = f"✅ 同步成功！\n解析到戏讯数据已更新到飞书。"
                       else:
-                          # 捕获错误详情并反馈
                           err_info = result.stderr or result.stdout
-                          status_msg = f"❌ 同步失败！\n错误详情: {err_info[:500]}..." if len(err_info) > 500 else f"❌ 同步失败！\n错误详情: {err_info}"
+                          status_msg = f"❌ 同步失败！\n错误详情: {err_info[:500]}..."
                       
                       requests.post(
                           f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
                           data={"chat_id": chat_id, "text": status_msg}
                       )
                       
-                      # 4. 标记消息已处理 (通过 offset 让下次获取不再出现此条)
+                      # 5. 确认消息已读 (通过 offset)
                       requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates", params={"offset": update_id + 1})
           else:
-              print("暂无新消息待处理。")
+              print("📭 暂无待处理消息。请确保你刚才在 Telegram 私聊中发过链接！")
           EOF
