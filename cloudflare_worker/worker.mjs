@@ -1,4 +1,6 @@
 const WECHAT_ARTICLE_PATTERN = /^https:\/\/mp\.weixin\.qq\.com\/\S+$/;
+const GITHUB_OWNER = 'rianlu';
+const GITHUB_REPO = 'xixun-parser';
 
 export function extractWeChatUrl(text) {
   const normalized = `${text ?? ''}`.trim();
@@ -80,7 +82,7 @@ async function sendTelegramMessage(env, { chatId, text, replyToMessageId }) {
 async function dispatchGitHubWorkflow(env, payload) {
   const workflowFile = env.GITHUB_WORKFLOW_FILE || 'sync.yml';
   const endpoint =
-    `https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}` +
+    `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}` +
     `/actions/workflows/${workflowFile}/dispatches`;
 
   const response = await fetch(endpoint, {
@@ -106,8 +108,6 @@ function validateEnvironment(env) {
     'TELEGRAM_BOT_TOKEN',
     'TELEGRAM_SECRET_TOKEN',
     'GITHUB_TOKEN',
-    'GITHUB_OWNER',
-    'GITHUB_REPO',
   ];
 
   const missingKeys = requiredKeys.filter((key) => !env[key]);

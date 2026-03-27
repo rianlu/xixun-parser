@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import {
+import worker, {
   buildDispatchPayload,
   extractWeChatUrl,
 } from './worker.mjs';
@@ -30,4 +30,24 @@ test('buildDispatchPayload maps telegram fields to workflow inputs', () => {
       },
     },
   );
+});
+
+test('webhook handler does not require owner/repo env vars anymore', async () => {
+  const request = new Request('https://example.com/', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'X-Telegram-Bot-Api-Secret-Token': 'wrong-secret',
+    },
+    body: JSON.stringify({ message: { text: 'hello', chat: { id: 1 } } }),
+  });
+
+  const response = await worker.fetch(request, {
+    TELEGRAM_BOT_TOKEN: 'token',
+    TELEGRAM_SECRET_TOKEN: 'expected-secret',
+    GITHUB_TOKEN: 'github-token',
+  });
+
+  assert.equal(response.status, 401);
+  assert.deepEqual(await response.json(), { ok: false, error: 'unauthorized' });
 });
