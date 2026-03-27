@@ -39,11 +39,11 @@ def main():
             url = input("\n请输入微信公众号文章链接: ").strip()
         except KeyboardInterrupt:
             print("\n已退出")
-            return
+            return 1
     
     if not url:
         print_colored("❌ 未输入链接，退出。", "31")
-        return
+        return 1
 
     # 2. Parse
     print_colored(f"\n🚀 正在解析: {url} ...", "33") # Yellow
@@ -57,11 +57,11 @@ def main():
              result = parser.parse_article(url)
     except Exception as e:
         print_colored(f"❌ 解析过程出错: {e}", "31")
-        return
+        return 1
 
     if not result.get('success'):
         print_colored(f"❌ 解析失败: {result.get('error')}", "31")
-        return
+        return 1
 
     performances = result['data']['performances']
     print_colored(f"✅ 解析成功! 共提取到 {len(performances)} 条数据。", "32")
@@ -81,7 +81,7 @@ def main():
     
     if not filtered_performances:
         print_colored("⚠️  筛选后没有剩余数据，退出。", "31")
-        return
+        return 0
 
     # 3. Calculate Sync Plan
     print_colored("\n☁️  正在比对云端数据...", "33")
@@ -91,7 +91,7 @@ def main():
         plan = syncer.calculate_sync_plan(filtered_performances)
     except Exception as e:
         print_colored(f"❌ 比对失败: {e}", "31")
-        return
+        return 1
 
     actions = plan['actions']
     
@@ -111,7 +111,7 @@ def main():
 
     if not to_create and not to_update and not to_delete:
         print_colored("\n✨ 数据已是最新，无需同步。", "32")
-        return
+        return 0
 
     # Show details for Create and Update
     if to_create:
@@ -152,7 +152,7 @@ def main():
             confirm = input("❓ 是否确认执行同步? (y/N): ").strip().lower()
         except KeyboardInterrupt:
             print("\n已取消")
-            return
+            return 1
 
     if confirm == 'y':
         print_colored("\n🔄 正在执行同步...", "33")
@@ -162,10 +162,13 @@ def main():
             print(f"新增: {stats['create']}")
             print(f"更新: {stats['update']}")
             print(f"删除: {stats['delete']}")
+            return 0
         except Exception as e:
             print_colored(f"❌ 同步执行失败: {e}", "31")
+            return 1
     else:
         print_colored("🚫 已取消操作。", "37")
+        return 1
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

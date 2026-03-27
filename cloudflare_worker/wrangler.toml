@@ -1,0 +1,6 @@
+name = "xixun-parser-telegram-webhook"
+main = "worker.mjs"
+compatibility_date = "2025-03-01"
+
+[observability]
+enabled = true

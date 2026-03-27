@@ -1,19 +1,29 @@
 name: Telegram 戏讯解析同步
 
 on:
-  schedule:
-    # 每 1 小时检查一次机器人消息 (GitHub 定时任务，节省额度且稳定)
-    - cron: '0 * * * *'
   workflow_dispatch:
-    # 允许手动触发测试
+    inputs:
+      url:
+        description: 微信公众号文章链接
+        required: true
+        type: string
+      chat_id:
+        description: Telegram Chat ID
+        required: false
+        type: string
 
 concurrency:
   group: telegram-sync
   cancel-in-progress: false
 
 jobs:
-  check-telegram:
+  sync-article:
     runs-on: ubuntu-latest
+    env:
+      INPUT_URL: ${{ github.event.inputs.url }}
+      CHAT_ID: ${{ github.event.inputs.chat_id }}
+      TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
     steps:
       - name: 获取项目代码
         uses: actions/checkout@v4
@@ -24,15 +34,23 @@ jobs:
           python-version: '3.10'
           cache: 'pip'
 
-      - name: 安装依赖
+      - name: 执行戏讯解析同步
+        id: sync
         run: |
-          python -m pip install --upgrade pip
-          pip install -r backend/requirements.txt
-          pip install requests
+          chmod +x one_click_sync.sh
+          set -o pipefail
+          ./one_click_sync.sh "${{ github.event.inputs.url }}" -y 2>&1 | tee sync.log
 
-      - name: 🤖 检查并处理 Telegram 消息
-        env:
-          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-          PYTHONPATH: ${{ github.workspace }}
-        run: python -m backend.telegram_workflow
+      - name: 通知同步成功
+        if: ${{ success() && github.event.inputs.chat_id != '' }}
+        run: |
+          curl -sS -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=✅ 戏讯解析同步完成。\n\n🔗 ${INPUT_URL}\n📄 ${RUN_URL}"
+
+      - name: 通知同步失败
+        if: ${{ failure() && github.event.inputs.chat_id != '' }}
+        run: |
+          curl -sS -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT_ID}" \
+            --data-urlencode "text=❌ 戏讯解析同步失败，请查看 GitHub Actions 日志。\n\n🔗 ${INPUT_URL}\n📄 ${RUN_URL}"
